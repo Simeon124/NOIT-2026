@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 0
     width: 434
     height: 941
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 21}
@@ -329,7 +329,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -402,7 +402,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1efbffff00ab00004aab0000b6ab0000fcab0000
+      m_ExpandedIDs: 0c3effff20fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1091,7 +1091,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       displayed: 1
       id: UnityEditor.ProBuilder.MenuActionSettingsOverlay
-      index: 12
+      index: 14
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
@@ -1212,9 +1212,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -22.208729, y: 1.4580564, z: 28.748688}
+    m_Target: {x: 555.1441, y: 11.49393, z: 416.89728}
     speed: 2
-    m_Value: {x: -22.208729, y: 1.4580564, z: 28.748688}
+    m_Value: {x: 555.1441, y: 11.49393, z: 416.89728}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1260,13 +1260,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09459743, y: -0.039695982, z: 0.0037991146, w: 0.9947863}
+    m_Target: {x: -0.010560362, y: 0.78830445, z: -0.013829631, w: -0.61523354}
     speed: 2
-    m_Value: {x: 0.094590865, y: -0.03969323, z: 0.003798851, w: 0.9947173}
+    m_Value: {x: -0.0096176425, y: 0.78915197, z: -0.012659874, w: -0.6139921}
   m_Size:
-    m_Target: 10
+    m_Target: 6.796577
     speed: 2
-    m_Value: 10
+    m_Value: 6.796577
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1374,7 +1374,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 42182
+  m_LastSelectedObjectID: -26244
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1504,7 +1504,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Player
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1514,16 +1514,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Player
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Projects (Unity)\NOIT2026
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 42}
-    m_SelectedIDs: aaae0000
-    m_LastClickedID: 44714
-    m_ExpandedIDs: 0000000096ac0000a2ae000000ca9a3b
+    m_SelectedIDs: dab60000
+    m_LastClickedID: 46810
+    m_ExpandedIDs: 00000000a8ac0000dab60000dcb6000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1552,7 +1552,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000096ac0000
+    m_ExpandedIDs: 00000000a8ac0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
