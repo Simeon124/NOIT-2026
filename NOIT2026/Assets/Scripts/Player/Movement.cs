@@ -151,7 +151,7 @@ public class Movement : MonoBehaviour
         }
 
         Vector3 movementDir = xAxis * hips.right + yAxis * hips.forward;
-        rb.MovePosition(rb.position + movementDir * speed * Time.deltaTime);
+        rb.MovePosition(rb.position + movementDir * speed * Time.fixedDeltaTime);
 
 
     }
