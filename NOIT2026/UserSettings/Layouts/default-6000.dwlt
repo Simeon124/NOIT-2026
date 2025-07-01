@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 77
+  controlID: 94
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 0
     width: 434
     height: 941
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 21}
@@ -402,7 +402,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0c3effff20fbffff
+      m_ExpandedIDs: 20fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1212,9 +1212,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 555.1441, y: 11.49393, z: 416.89728}
+    m_Target: {x: 486.28217, y: 4.3074384, z: 417.08508}
     speed: 2
-    m_Value: {x: 555.1441, y: 11.49393, z: 416.89728}
+    m_Value: {x: 486.28217, y: 4.3074384, z: 417.08508}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1260,9 +1260,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.010560362, y: 0.78830445, z: -0.013829631, w: -0.61523354}
+    m_Target: {x: 0.04666784, y: -0.9061469, z: 0.10147554, w: 0.40847096}
     speed: 2
-    m_Value: {x: -0.0096176425, y: 0.78915197, z: -0.012659874, w: -0.6139921}
+    m_Value: {x: 0.0461958, y: -0.90549153, z: 0.10002552, w: 0.4098122}
   m_Size:
     m_Target: 6.796577
     speed: 2
@@ -1272,8 +1272,8 @@ MonoBehaviour:
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 3.3216388
-    m_SpeedNormalized: 0.9599997
+    m_Speed: 3.46
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.001
     m_SpeedMax: 3.46
     m_EasingEnabled: 1
@@ -1504,7 +1504,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1514,16 +1514,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Projects (Unity)\NOIT2026
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 42}
-    m_SelectedIDs: dab60000
-    m_LastClickedID: 46810
-    m_ExpandedIDs: 00000000a8ac0000dab60000dcb6000000ca9a3b
+    m_SelectedIDs: 80af0000
+    m_LastClickedID: 44928
+    m_ExpandedIDs: 0000000080af000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1552,7 +1552,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a8ac0000
+    m_ExpandedIDs: 0000000080af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1580,7 +1580,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300008463000042a8000008570000f07f000042aa0000e0ae000054dd0000761801005aaf000090b200003abd0000289b0000d494000092680100f29900008c9c0400089c040040b90000a6d5000014b700005097000000000000783f02002642feff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
