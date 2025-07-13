@@ -1,29 +1,33 @@
 Using pre-set license
 Built from '6000.0/release' branch; Version is '6000.0.45f1 (d91bd3d4e081) revision 14228435'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16309 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32710 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Programs\Unitka2022\6000.0.45f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\6000.0.45f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/Projects (Unity)/NOIT2026
+F:/NOIT2026/NOIT-2026/NOIT2026
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
+<<<<<<< HEAD
 1706
+=======
+57238
+>>>>>>> b2f8884b5301798f12a5cbd40063ff33882e9313
 -job-worker-count
-3
+2
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: D:/Projects (Unity)/NOIT2026
-D:/Projects (Unity)/NOIT2026
+Successfully changed project path to: F:/NOIT2026/NOIT-2026/NOIT2026
+F:/NOIT2026/NOIT-2026/NOIT2026
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,6 +63,7 @@ D:/Projects (Unity)/NOIT2026
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [5088]  Target information:
 
 Player connection [5088]  * "[IP] 192.168.1.15 [Port] 0 [Flags] 2 [Guid] 605477962 [EditorId] 605477962 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U0DOSEJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
@@ -74,6 +79,15 @@ Player connection [5088]  * "[IP] 100.92.3.128 [Port] 0 [Flags] 2 [Guid] 6054779
 Player connection [5088] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [5088] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
+=======
+Player connection [65196]  Target information:
+
+Player connection [65196]  * "[IP] 192.168.0.131 [Port] 0 [Flags] 2 [Guid] 2294965312 [EditorId] 2294965312 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BD2VAO1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [65196] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [65196] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 2
+>>>>>>> b2f8884b5301798f12a5cbd40063ff33882e9313
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -84,19 +98,24 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
+=======
+Refreshing native plugins compatible for Editor in 2.23 ms, found 3 plugins.
+>>>>>>> b2f8884b5301798f12a5cbd40063ff33882e9313
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.45f1 (d91bd3d4e081)
-[Subsystems] Discovering subsystems at path D:/Programs/Unitka2022/6000.0.45f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Projects (Unity)/NOIT2026/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/NOIT2026/NOIT-2026/NOIT2026/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon (TM) RX 460 Series (ID=0x67ef)
-    Vendor:   ATI
-    VRAM:     4039 MB
-    Driver:   31.0.21921.1000
+    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
+    Vendor:   NVIDIA
+    VRAM:     7989 MB
+    Driver:   32.0.15.7652
 Initialize mono
+<<<<<<< HEAD
 Mono path[0] = 'D:/Programs/Unitka2022/6000.0.45f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Programs/Unitka2022/6000.0.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Programs/Unitka2022/6000.0.45f1/Editor/Data/MonoBleedingEdge/etc'
@@ -113,11 +132,28 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.465 seconds
 Domain Reload Profiling: 1150ms
 	BeginReloadAssembly (195ms)
+=======
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004379 seconds.
+- Loaded All Assemblies, in  1.117 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.608 seconds
+Domain Reload Profiling: 1722ms
+	BeginReloadAssembly (355ms)
+>>>>>>> b2f8884b5301798f12a5cbd40063ff33882e9313
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 	RebuildCommonClasses (60ms)
 	RebuildNativeTypeToScriptingClass (16ms)
 	initialDomainReloadingComplete (165ms)
@@ -139,6 +175,29 @@ Domain Reload Profiling: 1150ms
 			BeforeProcessingInitializeOnLoad (66ms)
 			ProcessInitializeOnLoadAttributes (207ms)
 			ProcessInitializeOnLoadMethodAttributes (68ms)
+=======
+	RebuildCommonClasses (114ms)
+	RebuildNativeTypeToScriptingClass (63ms)
+	initialDomainReloadingComplete (154ms)
+	LoadAllAssembliesAndSetupDomain (426ms)
+		LoadAssemblies (350ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (417ms)
+			TypeCache.Refresh (415ms)
+				TypeCache.ScanAssembly (378ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (609ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (559ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (319ms)
+			ProcessInitializeOnLoadMethodAttributes (109ms)
+>>>>>>> b2f8884b5301798f12a5cbd40063ff33882e9313
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -147,15 +206,20 @@ Domain Reload Profiling: 1150ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 - Loaded All Assemblies, in  1.037 seconds
 Refreshing native plugins compatible for Editor in 1.51 ms, found 3 plugins.
 Native extension for UWP target not found
+=======
+- Loaded All Assemblies, in  3.553 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+>>>>>>> b2f8884b5301798f12a5cbd40063ff33882e9313
 Native extension for WindowsStandalone target not found
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-NOIT2026
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.186 seconds
 Domain Reload Profiling: 2221ms
 	BeginReloadAssembly (249ms)
@@ -20720,3 +20784,62 @@ Memory consumption went from 156.4 MB to 148.0 MB.
 Total: 14.736200 ms (FindLiveObjects: 0.775500 ms CreateObjectMapping: 0.509000 ms MarkObjects: 7.040500 ms  DeleteObjects: 6.409900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+=======
+- Finished resetting the current domain, in  1.452 seconds
+Domain Reload Profiling: 4995ms
+	BeginReloadAssembly (1999ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1221ms)
+	RebuildCommonClasses (98ms)
+	RebuildNativeTypeToScriptingClass (39ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (1324ms)
+		LoadAssemblies (1360ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (411ms)
+			TypeCache.Refresh (296ms)
+				TypeCache.ScanAssembly (272ms)
+			BuildScriptInfoCaches (75ms)
+			ResolveRequiredComponents (36ms)
+	FinalizeReload (1453ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1196ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (839ms)
+			ProcessInitializeOnLoadMethodAttributes (178ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 232 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6322 unused Assets / (5.0 MB). Loaded Objects now: 7042.
+Memory consumption went from 164.9 MB to 159.9 MB.
+Total: 24.592200 ms (FindLiveObjects: 0.825500 ms CreateObjectMapping: 5.890800 ms MarkObjects: 14.111700 ms  DeleteObjects: 3.762700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 691725.659615 seconds.
+  path: Assets/InputSystem_Actions.inputactions
+  artifactKey: Guid(052faaac586de48259a63d0c4782560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InputSystem_Actions.inputactions using Guid(052faaac586de48259a63d0c4782560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e3f70f0364ded6a0e35bba7f5564b43') in 0.0646384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Readme.asset
+  artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7564957e633b305f4e69560a9de8e20a') in 0.0032597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+>>>>>>> b2f8884b5301798f12a5cbd40063ff33882e9313
