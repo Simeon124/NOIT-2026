@@ -1624,8 +1624,8 @@ GameObject:
   - component: {fileID: 8343899316333930975}
   - component: {fileID: 5475517554042468393}
   - component: {fileID: 6494015765529231843}
-  - component: {fileID: 4244972779975755652}
   - component: {fileID: 437231312074466743}
+  - component: {fileID: 3932315847042714272}
   m_Layer: 3
   m_Name: TestPlayer
   m_TagString: Untagged
@@ -1666,7 +1666,7 @@ MonoBehaviour:
   speed: 20
   sprintSpeed: 30
   jumpForce: 5
-  hips: {fileID: 4789382744557162567}
+  hips: {fileID: 8343899316333930975}
   groundCheckPos: {fileID: 2459921400788215602}
   isGrounded: 0
   stamina: 20
@@ -1706,27 +1706,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4244972779975755652
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4049451774351053753}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.45753473, z: 1}
-  m_Center: {x: 0, y: 0.011314809, z: 0}
 --- !u!114 &437231312074466743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1744,6 +1723,29 @@ MonoBehaviour:
   sanityDropMultiplier: 15
   sanityRiseMultiplier: 15
   insanityZoneTag: InsanityZone
+--- !u!136 &3932315847042714272
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4049451774351053753}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 4.8611116
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.4277072, z: 0}
 --- !u!1 &4785481585616567747
 GameObject:
   m_ObjectHideFlags: 0

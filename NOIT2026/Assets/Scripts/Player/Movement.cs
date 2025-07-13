@@ -68,7 +68,6 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true && hasStamina == true)
         {
-
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             /*/
             anim.SetBool("isGrounded", false);

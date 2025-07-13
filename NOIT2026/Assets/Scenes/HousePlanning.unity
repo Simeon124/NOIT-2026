@@ -1453,7 +1453,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1116133424}
+  m_Mesh: {fileID: 449773989}
 --- !u!33 &363023651
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -5226,10 +5226,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3716664538223786466, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+      propertyPath: spine
+      value: 
+      objectReference: {fileID: 927859473}
     - target: {fileID: 4049451774351053753, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: m_Name
       value: TestPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 5475517554042468393, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+      propertyPath: hips
+      value: 
+      objectReference: {fileID: 1834221198}
     - target: {fileID: 5475517554042468393, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: speed
       value: 10
@@ -6511,6 +6519,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!4 &927859473 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4789382744557162567, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+  m_PrefabInstance: {fileID: 905053003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &932061364
 GameObject:
   m_ObjectHideFlags: 0
@@ -14856,6 +14869,11 @@ CapsuleCollider:
   m_Height: 4.9564695
   m_Direction: 1
   m_Center: {x: 0, y: 2.4390094, z: 0}
+--- !u!4 &1834221198 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8343899316333930975, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+  m_PrefabInstance: {fileID: 905053003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1851876491
 GameObject:
   m_ObjectHideFlags: 0
