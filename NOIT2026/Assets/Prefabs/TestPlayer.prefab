@@ -309,8 +309,8 @@ MonoBehaviour:
   playerBody: {fileID: 8343899316333930975}
   spine: {fileID: 4789382744557162567}
   minYRotation: -40
-  maxYRotation: 40
-  sensitivity: 50
+  maxYRotation: 45
+  sensitivity: 20
   isInMenu: 0
 --- !u!1 &575113118666824523
 GameObject:
@@ -709,7 +709,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 77
   orthographic: 0
@@ -1663,13 +1663,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a92e53e6c25f649b24a1787c515f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  sprintSpeed: 30
+  speed: 10
+  sprintSpeed: 20
   jumpForce: 5
   hips: {fileID: 8343899316333930975}
   groundCheckPos: {fileID: 2459921400788215602}
   isGrounded: 0
-  stamina: 20
+  stamina: 100
   staminaResetMultiplier: 5
   footstepsSFXAudioSource: {fileID: 0}
   jumpSFXAudioSource: {fileID: 0}
@@ -1742,7 +1742,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.65
   m_Height: 4.8611116
   m_Direction: 1
   m_Center: {x: 0, y: 2.4277072, z: 0}
