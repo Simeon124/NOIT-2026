@@ -1,28 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Sanity : MonoBehaviour
 {
-    [SerializeField] private float maxSanity;
-    [SerializeField] private float currentSanity;
+    [SerializeField] public float maxSanity;
+    [SerializeField] public float currentSanity;
     [SerializeField] private float sanityDropMultiplier;
     [SerializeField] private float sanityRiseMultiplier;
     [SerializeField] private string insanityZoneTag;
+    [SerializeField] private string safeZoneTag;
 
-    bool isInInsanityZone = false;
+    [SerializeField] Volume insanityVolume;
+
+    [SerializeField] bool isInInsanityZone = false;
+
+    [SerializeField] List<string> currentZones = new List<string>();
+
+    private void Update()
+    {
+        if (currentZones.Contains(insanityZoneTag) && !currentZones.Contains("SafeZone"))
+        {
+            isInInsanityZone = true;
+        }
+        else
+        {
+            isInInsanityZone = false;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
+        currentZones.Add(other.tag);
         if (other.gameObject.tag == insanityZoneTag)
         {
             isInInsanityZone = true;
             StopAllCoroutines();
             StartCoroutine(SanityDrop());
         }
+        if (other.gameObject.tag == safeZoneTag)
+        {
+            isInInsanityZone = false;
+            StopAllCoroutines();
+            StartCoroutine(SanityRegen());
+        }
     }
     private void OnTriggerExit(Collider other)
     {
+        currentZones.Remove(other.tag);
+
+        if (other.gameObject.tag == safeZoneTag)
+        {
+            isInInsanityZone = true;
+            StopAllCoroutines();
+            StartCoroutine(SanityDrop());
+        }
+
         if (other.gameObject.tag == insanityZoneTag)
         {
             isInInsanityZone = false;
@@ -37,7 +73,9 @@ public class Sanity : MonoBehaviour
         {
             if (currentSanity > 0)
             {
+                insanityVolume.weight += Time.deltaTime * 0.01f * sanityDropMultiplier;
                 currentSanity -= Time.deltaTime * sanityDropMultiplier;
+                UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
             }
             yield return null;
         }
@@ -46,12 +84,15 @@ public class Sanity : MonoBehaviour
 
     public IEnumerator SanityRegen()
     {
-        while (currentSanity <= 100)
+        while (currentSanity <= 100 && isInInsanityZone == false)
         {
+            insanityVolume.weight -= Time.deltaTime * 0.1f * sanityRiseMultiplier;
 
             currentSanity += Time.deltaTime * sanityRiseMultiplier;
 
             yield return null;
+
+            UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
         }
 
         if (currentSanity > 100)

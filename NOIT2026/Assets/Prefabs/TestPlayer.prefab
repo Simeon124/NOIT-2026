@@ -270,6 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7117596059652723218}
   - component: {fileID: 3716664538223786466}
+  - component: {fileID: 555689294582774347}
   m_Layer: 0
   m_Name: head
   m_TagString: Untagged
@@ -312,6 +313,27 @@ MonoBehaviour:
   maxYRotation: 45
   sensitivity: 20
   isInMenu: 0
+--- !u!135 &555689294582774347
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525898581281216034}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.0035
+  m_Center: {x: 0, y: 0.003, z: 0}
 --- !u!1 &575113118666824523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4789382744557162567}
+  - component: {fileID: 5103350501598235275}
   m_Layer: 0
   m_Name: hip
   m_TagString: Untagged
@@ -1293,6 +1316,29 @@ Transform:
   - {fileID: 5531777504468518563}
   m_Father: {fileID: 3630014974640458488}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5103350501598235275
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2617375736656127044}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.004
+  m_Height: 0.017
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.004, z: 0}
 --- !u!1 &2737422276025371627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,7 +1711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   sprintSpeed: 20
-  jumpForce: 5
+  jumpForce: 10
   hips: {fileID: 8343899316333930975}
   groundCheckPos: {fileID: 2459921400788215602}
   isGrounded: 0
@@ -1687,7 +1733,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4049451774351053753}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 2.4
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1704,8 +1750,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!114 &437231312074466743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1723,6 +1769,9 @@ MonoBehaviour:
   sanityDropMultiplier: 15
   sanityRiseMultiplier: 15
   insanityZoneTag: InsanityZone
+  safeZoneTag: 
+  isInInsanityZone: 0
+  currentZones: []
 --- !u!136 &3932315847042714272
 CapsuleCollider:
   m_ObjectHideFlags: 0
