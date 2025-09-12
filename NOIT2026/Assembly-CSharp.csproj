@@ -66,6 +66,8 @@
     <Compile Include="Assets\StressBarManager.cs" />
     <Compile Include="Assets\ImageThing.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\RandomPosition.cs" />
+    <Compile Include="Assets\LoopButton.cs" />
     <Compile Include="Assets\Scripts\InformaticsPuzzle\ButtonPick.cs" />
     <Compile Include="Assets\Scripts\Player\LookControl.cs" />
     <Compile Include="Assets\ButtonRandomizer.cs" />
