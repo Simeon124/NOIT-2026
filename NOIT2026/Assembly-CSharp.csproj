@@ -62,15 +62,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
+    <Compile Include="Assets\Scripts\InformaticsPuzzle\ButtonRandomizer.cs" />
+    <Compile Include="Assets\Scripts\GroupPhotoPuzzle\ButtonPick1.cs" />
+    <Compile Include="Assets\Scripts\GroupPhotoPuzzle\LoopButton.cs" />
+    <Compile Include="Assets\Scripts\GroupPhotoPuzzle\RandomPosition.cs" />
     <Compile Include="Assets\Scripts\Player\Sanity.cs" />
-    <Compile Include="Assets\StressBarManager.cs" />
-    <Compile Include="Assets\ImageThing.cs" />
+    <Compile Include="Assets\Scripts\InformaticsPuzzle\StressBarManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\RandomPosition.cs" />
-    <Compile Include="Assets\LoopButton.cs" />
     <Compile Include="Assets\Scripts\InformaticsPuzzle\ButtonPick.cs" />
+    <Compile Include="Assets\Scripts\InformaticsPuzzle\ImageThing.cs" />
     <Compile Include="Assets\Scripts\Player\LookControl.cs" />
-    <Compile Include="Assets\ButtonRandomizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
