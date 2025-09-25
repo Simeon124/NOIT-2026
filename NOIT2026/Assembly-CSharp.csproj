@@ -68,7 +68,9 @@
     <Compile Include="Assets\Scripts\GroupPhotoPuzzle\RandomPosition.cs" />
     <Compile Include="Assets\Scripts\Player\Sanity.cs" />
     <Compile Include="Assets\Scripts\InformaticsPuzzle\StressBarManager.cs" />
+    <Compile Include="Assets\CleanTheMrusno.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\MovementTopDown.cs" />
     <Compile Include="Assets\Scripts\InformaticsPuzzle\ButtonPick.cs" />
     <Compile Include="Assets\Scripts\InformaticsPuzzle\ImageThing.cs" />
     <Compile Include="Assets\Scripts\Player\LookControl.cs" />
