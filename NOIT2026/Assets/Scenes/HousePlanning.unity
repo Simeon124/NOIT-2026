@@ -161,7 +161,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 2073291871}
+  m_Mesh: {fileID: 580565682}
 --- !u!33 &81939462
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -3005,7 +3005,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 762308488}
+  m_Mesh: {fileID: 1856354989}
 --- !u!33 &442815305
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -5592,7 +5592,7 @@ PrefabInstance:
       objectReference: {fileID: 1834221198}
     - target: {fileID: 5475517554042468393, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: speed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5475517554042468393, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: stamina
@@ -5600,7 +5600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5475517554042468393, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: jumpForce
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5475517554042468393, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: sprintSpeed
@@ -10336,7 +10336,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 2073291871}
+  m_Mesh: {fileID: 1204942465}
 --- !u!33 &1402906644
 MeshFilter:
   m_ObjectHideFlags: 10
