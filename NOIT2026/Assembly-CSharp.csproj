@@ -64,11 +64,17 @@
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
     <Compile Include="Assets\Scripts\InformaticsPuzzle\ButtonRandomizer.cs" />
     <Compile Include="Assets\Scripts\GroupPhotoPuzzle\ButtonPick1.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\PickUpScript.cs" />
     <Compile Include="Assets\Scripts\GroupPhotoPuzzle\LoopButton.cs" />
     <Compile Include="Assets\Scripts\GroupPhotoPuzzle\RandomPosition.cs" />
     <Compile Include="Assets\Scripts\Player\Sanity.cs" />
     <Compile Include="Assets\pickUpScript2.cs" />
+=======
+    <Compile Include="Assets\Scripts\GroupPhotoPuzzle\LoopButton.cs" />
+    <Compile Include="Assets\Scripts\GroupPhotoPuzzle\RandomPosition.cs" />
+    <Compile Include="Assets\Scripts\Player\Sanity.cs" />
+>>>>>>> 736fd485548a6a3bad4f52876636b6ab499e148e
     <Compile Include="Assets\Scripts\InformaticsPuzzle\StressBarManager.cs" />
     <Compile Include="Assets\CleanTheMrusno.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
