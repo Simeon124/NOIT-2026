@@ -5,13 +5,18 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [Header("Controls")]
+    public KeyCode spaceKey;
+    public KeyCode sprintKey;
+    public KeyCode interactKey;
+
     [Header("Movement")]
     [SerializeField] private float speed;
     [SerializeField] private float sprintSpeed;
     private float normalSpeed;
     bool sprinting;
     [SerializeField] private float jumpForce;
-    [SerializeField] private Transform hips;
+    //[SerializeField] private Transform hips;
     Rigidbody rb;
     [SerializeField] Transform groundCheckPos;
     [SerializeField] bool isGrounded;
@@ -66,7 +71,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true && hasStamina == true)
+        if (Input.GetKeyDown(spaceKey) && isGrounded == true && hasStamina == true)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             /*/
@@ -149,7 +154,7 @@ public class Movement : MonoBehaviour
             hasStamina = true;
         }
 
-        Vector3 movementDir = xAxis * hips.right + yAxis * hips.forward;
+        Vector3 movementDir = xAxis * gameObject.transform.right + yAxis * gameObject.transform.forward;
         rb.MovePosition(rb.position + movementDir * speed * Time.fixedDeltaTime);
 
 
@@ -158,12 +163,12 @@ public class Movement : MonoBehaviour
     public void Sprinting(float sprintSpeed)
     {
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && hasStamina)
+        if (Input.GetKeyDown(sprintKey) && hasStamina)
         {
             sprinting = true;
 
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        else if (Input.GetKeyUp(sprintKey))
         {
             sprinting = false;
         }

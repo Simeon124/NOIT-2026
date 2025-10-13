@@ -29,6 +29,8 @@ public class Sanity : MonoBehaviour
         else
         {
             isInInsanityZone = false;
+            StopAllCoroutines();
+            StartCoroutine(SanityRegen());
         }
     }
 

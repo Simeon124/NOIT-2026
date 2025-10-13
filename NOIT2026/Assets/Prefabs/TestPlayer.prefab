@@ -302,17 +302,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525898581281216034}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cedf22a758c829c4ca3fb2d8dbcdef5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 8343899316333930975}
-  spine: {fileID: 4789382744557162567}
   minYRotation: -40
   maxYRotation: 45
   sensitivity: 20
-  isInMenu: 0
 --- !u!135 &555689294582774347
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -382,7 +380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2598005414387538600
 Transform:
   m_ObjectHideFlags: 0
@@ -678,6 +676,7 @@ GameObject:
   - component: {fileID: 5822516946155278305}
   - component: {fileID: 6604819280118993753}
   - component: {fileID: 627907528213456993}
+  - component: {fileID: 2740461294805780037}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -803,6 +802,22 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &2740461294805780037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354297274281261337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedf22a758c829c4ca3fb2d8dbcdef5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBody: {fileID: 8343899316333930975}
+  minYRotation: -40
+  maxYRotation: 45
+  sensitivity: 20
 --- !u!1 &1405530617156050140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,10 +1724,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a92e53e6c25f649b24a1787c515f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spaceKey: 32
+  sprintKey: 304
+  interactKey: 101
   speed: 10
   sprintSpeed: 20
   jumpForce: 10
-  hips: {fileID: 8343899316333930975}
   groundCheckPos: {fileID: 2459921400788215602}
   isGrounded: 0
   stamina: 100
@@ -1770,6 +1787,7 @@ MonoBehaviour:
   sanityRiseMultiplier: 15
   insanityZoneTag: InsanityZone
   safeZoneTag: 
+  insanityVolume: {fileID: 0}
   isInInsanityZone: 0
   currentZones: []
 --- !u!136 &3932315847042714272

@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/IntroScene/Village.unity
+    path: Assets/Scenes/IntroScene/Interlude.unity
     guid: 9f42a366a6938c547bc7e23d6081db3d
   - enabled: 1
     path: Assets/Scenes/ForPrototyping/TeleportRoom.unity
