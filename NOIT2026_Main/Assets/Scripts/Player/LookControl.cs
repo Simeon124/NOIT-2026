@@ -16,6 +16,7 @@ public class LookControl : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        bodyRotation = playerBody.localEulerAngles.y;
     }
 
     void LateUpdate()
@@ -31,7 +32,7 @@ public class LookControl : MonoBehaviour
         gameObject.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
         bodyRotation += mousAxisX;
-        playerBody.localEulerAngles = new Vector3(0, bodyRotation, 0);
+        playerBody.localEulerAngles = new Vector3(playerBody.rotation.x, bodyRotation, playerBody.rotation.z);
 
     }
 }

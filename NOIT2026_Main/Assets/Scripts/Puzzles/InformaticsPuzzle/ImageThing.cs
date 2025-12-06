@@ -5,22 +5,29 @@ public class ImageThing : MonoBehaviour
 {
     //na poziciq 0 se slaga purviq greshen otgovor, a na poziciq 1 se slaga vtoriq. posle na poziciq 2
     //se slaga purvi greshen otgovor na vtori vupros, a na 3 - vtori greshen otgovor i tn. tn.
-    public Image[] WrongAns;
+    public Sprite[] WrongAns;
     //sushtoto samo che na 0 se slaga vuprosa, a na 1 se veren otgovor
-    public Image[] CorrectAns;
+    public Sprite[] CorrectAns;
     public Image correct;
     public Image wrong;
     public Image wrong2;
     public Image question;
     int QuestionNumber = 0;
+    [SerializeField] private int maxQuestions = 2;
 
-    public void imagechange()
+    private void Start()
     {
-        question = CorrectAns[QuestionNumber];
-        correct = CorrectAns[QuestionNumber + 1];
-        wrong = WrongAns[QuestionNumber];
-        wrong2 = WrongAns[QuestionNumber + 1];
-        QuestionNumber += 2;
+    }
+    public void ImageChange()
+    {
+        if (QuestionNumber < maxQuestions * 2)//maksimalniq broi vuprosi umnojen po 2
+        {
+            question.sprite = CorrectAns[QuestionNumber];
+            correct.sprite = CorrectAns[QuestionNumber + 1];
+            wrong.sprite = WrongAns[QuestionNumber];
+            wrong2.sprite = WrongAns[QuestionNumber + 1];
+            QuestionNumber += 2;
+        }
 
     }
 }

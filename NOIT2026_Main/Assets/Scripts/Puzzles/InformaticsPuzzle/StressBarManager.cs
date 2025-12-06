@@ -39,6 +39,7 @@ public class StressBarManager : MonoBehaviour
     }
     IEnumerator Cooldown()
     {
+
         yield return new WaitForSeconds(CooldownTime);
         StartCoroutine(Fill());
     }

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu/Intro.unity
+    guid: d581da2b87ac4c48696c73298c8f281c
+  - enabled: 1
     path: Assets/Scenes/IntroScene/Interlude.unity
     guid: 9f42a366a6938c547bc7e23d6081db3d
   - enabled: 1
@@ -29,6 +32,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SeparateCutscenes/L1_To_L2_Transition.unity
     guid: 8b04956596cc185ddb486db64aa0267c
+  - enabled: 1
+    path: Assets/Scenes/Level 2/Level2.unity
+    guid: 9fe2953f6404f6240b7d312ea8fd8d7f
+  - enabled: 1
+    path: Assets/Scenes/Level 2/Puzzles/InformaticsBookPuzzle.unity
+    guid: 27e34a1c2c0a37c3a9bf4790a800c533
+  - enabled: 1
+    path: Assets/Scenes/SeparateCutscenes/InformaticBookCutscene.unity
+    guid: 006649324e33e0d3a84d0d54d734f3e8
+  - enabled: 1
+    path: Assets/Scenes/Level 2/Puzzles/DiaryPuzzle.unity
+    guid: 8b51405f4af707143b3ffafad52e5cd3
+  - enabled: 1
+    path: Assets/Scenes/Level 2/Puzzles/DiaryPuzzle_Part_Two.unity
+    guid: 6fb37e5683b26204bb251816c585aabc
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/MainMenu_Interlude.unity
+    guid: d6cbe810c5828cf9dad34d916165515f
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/MainMenu_Level1.unity
+    guid: 61241c198ab17ce8b97106210b3695bf
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/MainMenu_Level2.unity
+    guid: 8cdedf9791962648b984a2804042bda2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

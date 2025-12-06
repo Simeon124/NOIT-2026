@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,13 +7,15 @@ public class ButtonRandomizer : MonoBehaviour
 {
     public Button[] buttons;
     public Transform[] positions;
-   // public ImageThing ImageThing;
-    
+    public ImageThing imageManager;
+    // public ImageThing ImageThing;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-     RandomizePos();
-   //  ImageThing.imagechange();
+        Cursor.lockState = CursorLockMode.None;
+        RandomizePos();
+   //   ImageThing.imagechange();
     }
 
     // Update is called once per frame
@@ -22,7 +25,7 @@ public class ButtonRandomizer : MonoBehaviour
     }
     public void RandomizePos()
     {   int[] number = new int[positions.Length];
-       
+        //imageManager.ImageChange();
         for (int i = positions.Length - 1; i > 0; i--)
         { 
             number[i] = i; 

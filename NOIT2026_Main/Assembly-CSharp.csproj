@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_6000_2_8;UNITY_6000_2;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_LINUX;PLATFORM_STANDALONE;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_6000_2_12;UNITY_6000_2;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_LINUX;PLATFORM_STANDALONE;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -41,9 +41,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
-    <Analyzer Include="/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
-    <Analyzer Include="/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
+    <Analyzer Include="/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
+    <Analyzer Include="/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
+    <Analyzer Include="/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionRamp.cs" />
@@ -61,14 +61,17 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ContrastStretch.cs" />
     <Compile Include="Assets/Models/Props and Furniture/Free Wood Door Pack/Script/Door.cs" />
     <Compile Include="Assets/Scripts/Player/EnemySightDetection.cs" />
+    <Compile Include="Assets/Scripts/Cutscenes/GameLevelLoader.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/BloomAndFlares.cs" />
     <Compile Include="Assets/Scripts/Player/Sanity.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/FinishedTransitionHandler.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ScreenOverlay.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientObscurance.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/SunShafts.cs" />
     <Compile Include="Assets/Scripts/AI/Enemy/EnemyNavigation.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/GlobalFog.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsHelper.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/Interactable.cs" />
     <Compile Include="Assets/Scripts/MiscHandlers/HouseHandler.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/ButtonRandomizer.cs" />
     <Compile Include="Assets/Scripts/Cutscenes/AnimationSceneChangeManager.cs" />
@@ -77,12 +80,14 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionLookup.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets/Scripts/Puzzles/GroupPhotoPuzzle/ButtonPick1.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/DnevnikMehanikaSetup.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/StressBarManager.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Twirl.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ImageEffectBase.cs" />
     <Compile Include="Assets/Scripts/GameplayHandlers/GameStateSaveSystem.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndScratches.cs" />
     <Compile Include="Assets/Models/Props and Furniture/Free Wood Door Pack/Script/FPSController.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/Part_Two/DynamicDialogueSystem.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Vortex.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/ButtonPick.cs" />
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/pickUpScript2.cs" />
@@ -93,9 +98,11 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/CameraMotionBlur.cs" />
     <Compile Include="Assets/Scripts/ForPrototyping/TeleportToAScene.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
+    <Compile Include="Assets/Scripts/UI/MainMenu/MainMenuUIHandler.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/SepiaTone.cs" />
     <Compile Include="Assets/Scripts/Tutorial/FragmentTutorial.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Tonemapping.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/HasLineOfSight.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/CreaseShading.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Grayscale.cs" />
     <Compile Include="Assets/Models/Props and Furniture/Free Wood Door Pack/Script/CameraOpenDoor.cs" />
@@ -117,6 +124,7 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ImageEffects.cs" />
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/PickUpScript.cs" />
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/CleanTheMrusno.cs" />
+    <Compile Include="Assets/Scripts/Player/Flashlight.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/Tonemapper.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -227,931 +235,937 @@
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/TiltShiftHdrLensBlur.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AndroidJNIModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ContentLoadModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ContentLoadModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ContentLoadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GIModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GraphicsStateCollectionSerializerModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.GraphicsStateCollectionSerializerModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.GraphicsStateCollectionSerializerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HierarchyCoreModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyCoreModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyCoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IdentifiersModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.IdentifiersModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.IdentifiersModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputForUIModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputForUIModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputForUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.MarshallingModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.MarshallingModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.MarshallingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.MultiplayerModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.MultiplayerModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.MultiplayerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PropertiesModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.PropertiesModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.PropertiesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ShaderVariantAnalyticsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ShaderVariantAnalyticsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.ShaderVariantAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreFontEngineModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreTextEngineModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityConsentModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConsentModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConsentModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityCurlModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VirtualTexturingModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.AccessibilityModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.AdaptivePerformanceModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.BuildProfileModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.BuildProfileModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.BuildProfileModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.ClothModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.ClothModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.ClothModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.CoreBusinessMetricsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreBusinessMetricsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreBusinessMetricsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.CoreModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.DeviceSimulatorModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.DiagnosticsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.EditorToolbarModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.EditorToolbarModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.EditorToolbarModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.EmbreeModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.EmbreeModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.EmbreeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.GIModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.GIModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.GIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.GraphViewModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.GraphicsStateCollectionSerializerModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphicsStateCollectionSerializerModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphicsStateCollectionSerializerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.GridAndSnapModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridAndSnapModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridAndSnapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.GridModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.InAppPurchasingModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.InAppPurchasingModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.InAppPurchasingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.LevelPlayModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.LevelPlayModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.LevelPlayModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.MultiplayerModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.MultiplayerModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.MultiplayerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Physics2DModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.Physics2DModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.PhysicsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.PhysicsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.PresetsUIModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.PresetsUIModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.PresetsUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.PropertiesModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.PropertiesModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.PropertiesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.QuickSearchModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.QuickSearchModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.QuickSearchModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SafeModeModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.SafeModeModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.SafeModeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SceneTemplateModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SceneViewModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneViewModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneViewModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.ShaderFoundryModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderFoundryModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderFoundryModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SketchUpModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.SketchUpModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.SketchUpModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpriteMaskModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteMaskModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpriteShapeModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteShapeModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SubstanceModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.SubstanceModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.SubstanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TerrainModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.TerrainModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TextCoreFontEngineModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreFontEngineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TextCoreTextEngineModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreTextEngineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TextRenderingModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextRenderingModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TilemapModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.TilemapModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TreeModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.TreeModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.TreeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UIAutomationModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIAutomationModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIAutomationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UIBuilderModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIBuilderModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIBuilderModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UIElementsModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UIElementsSamplesModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UmbraModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.UmbraModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.VFXModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.VFXModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.VideoModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.VideoModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XRModule">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.XRModule.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/PackageCache/com.unity.ext.nunit@b16e6d09cd93/net40/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.ext.nunit@b16e6d09cd93/net40/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Hashing">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.Tests/System.IO.Hashing/System.IO.Hashing.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.Tests/System.IO.Hashing/System.IO.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/PackageCache/com.unity.visualscripting@6279e2b7c485/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/PackageCache/com.unity.nuget.mono-cecil@d78732e851eb/Mono.Cecil.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.nuget.mono-cecil@d78732e851eb/Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Primitives">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.AppContext">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Concurrent">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.NonGeneric">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Specialized">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.EventBasedAsync">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Primitives">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.TypeConverter">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll</HintPath>
     </Reference>
     <Reference Include="System.Console">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Common">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Contracts">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Debug">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.FileVersionInfo">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Process">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TextWriterTraceListener">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Tools">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TraceSource">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Tracing">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Dynamic.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Calendars">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Extensions">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.ZipFile">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.DriveInfo">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Primitives">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Watcher">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.IsolatedStorage">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.MemoryMappedFiles">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Pipes">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.UnmanagedMemoryStream">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="System.IO">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Expressions">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Parallel">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Queryable">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Memory">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NameResolution">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NetworkInformation">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Ping">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Primitives">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Requests">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Security">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Sockets">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebHeaderCollection">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets.Client">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.ObjectModel">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.DispatchProxy">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit.ILGeneration">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit.Lightweight">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Extensions">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Primitives">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Reader">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.ResourceManager">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Writer">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.VisualC">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Extensions">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Handles">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Numerics">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Formatters">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Json">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Xml">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Claims">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Csp">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Principal">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.SecureString">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding.Extensions">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.RegularExpressions">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Overlapped">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Parallel">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Thread">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.ThreadPool">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Timer">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.ReaderWriter">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XDocument">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlDocument">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="System.Net">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Web">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll</HintPath>
     </Reference>
     <Reference Include="System.Web">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Serialization">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>/media/simo/3C08F3F908F3B04E/UnityEditors/6000.2.8f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Updater">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="PPv2URPConverters">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rendering.LightTransport.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.SysrootPackage.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TerrainTools">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Sysroot.Linux_x86_64">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InputSystem.ForUI">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Multiplayer.Center.Common">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Multiplayer.Center.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TerrainTools.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rendering.LightTransport.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Toolchain.Linux-x86_64">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rendering.LightTransport.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SysrootPackage.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Sysroot.Linux_x86_64">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem.ForUI">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.Center.Common">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.Center.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rendering.LightTransport.Runtime">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Toolchain.Linux-x86_64">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Settings.Editor">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Settings.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Settings.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/media/simo/3C08F3F908F3B04E/Projects (Unity)/_ForNOIT2026/NOIT2026_Main/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

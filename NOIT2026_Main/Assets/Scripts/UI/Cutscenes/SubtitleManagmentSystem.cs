@@ -18,8 +18,15 @@ public class SubtitleManagmentSystem : MonoBehaviour
         Debug.Log("writing");
         foreach (var letter in targetText)
         {
-            yield return new WaitForSeconds(textAnimationDurationPerLetter);
-            subtitleText.text += letter;
+            if (letter != '\\')
+            {
+                yield return new WaitForSeconds(textAnimationDurationPerLetter);
+                subtitleText.text += letter;
+            }
+            else
+            {
+                subtitleText.text += letter;
+            }
         }
     }
 }

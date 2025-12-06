@@ -4590,7 +4590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LaundryHandler
   _animationSceneChangeManager: {fileID: 114154020}
-  cutsceneIndex: 6
+  cutsceneIndex: 7
   laundryParent: {fileID: 136342496}
 --- !u!4 &343125313 stripped
 Transform:

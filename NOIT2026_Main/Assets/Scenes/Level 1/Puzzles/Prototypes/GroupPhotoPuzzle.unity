@@ -383,6 +383,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!223 &1339038880 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8103891893422078694, guid: cbfeee28178970e3d80afbcc1caad77d, type: 3}
+  m_PrefabInstance: {fileID: 3933263162129016339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3933263162129016339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -395,6 +400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueGame
       objectReference: {fileID: 0}
+    - target: {fileID: 5041823601333545917, guid: cbfeee28178970e3d80afbcc1caad77d, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1339038880}
     - target: {fileID: 8633689686858269457, guid: cbfeee28178970e3d80afbcc1caad77d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 960

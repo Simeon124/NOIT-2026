@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class GameStateSaveSystem : MonoBehaviour
 {
+    //This is an important variable that determines what will be assigned on the level save PlayerPrefs of the player (0 = null)
+    [SerializeField] private int currentLevel;
+    
     //Assign the fragments of the scene so they can be saved. ORDER IS IMPORTANT - THE FIRST IS 'FRAGMENT 1' THE SECOND 'FRAGMENT 2'.
     [SerializeField] List<GameObject> fragments;
 
@@ -14,8 +17,13 @@ public class GameStateSaveSystem : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log(PlayerPrefs.GetFloat("Fragment 1"));
+        
         if (isCutscene == false)
         {
+            //Save the level that the player is currently in
+            PlayerPrefs.SetInt("CurrentLevel", currentLevel);
+            
             player = GameObject.FindWithTag("Player");
 
             float savedPosX = PlayerPrefs.GetFloat("PlayerPosX");
@@ -36,12 +44,13 @@ public class GameStateSaveSystem : MonoBehaviour
             }
 
             //The fragments of the level are always two (for now) so we assign two values. This is not really a good practice, but in our case it is manageable
+            //2 - enabled, 1- disabled, 0 - null.
             if (PlayerPrefs.GetInt("Fragment 1") != 0 && PlayerPrefs.GetInt("Fragment 2") == 0)
             {
                 PlayerPrefs.SetInt("Fragment 1", 2);
                 PlayerPrefs.SetInt("Fragment 2", 2);
             }
-
+            
             if (PlayerPrefs.GetInt("Fragment 1") == 1)
             {
                 fragments[0].SetActive(false);
@@ -69,5 +78,11 @@ public class GameStateSaveSystem : MonoBehaviour
     public void Fragment2Disable()
     {
         PlayerPrefs.SetInt("Fragment 2", 1);
+    }
+
+    public void ClearFragments()
+    {
+        PlayerPrefs.SetInt("Fragment 1", 0);
+        PlayerPrefs.SetInt("Fragment 2", 0);
     }
 }
