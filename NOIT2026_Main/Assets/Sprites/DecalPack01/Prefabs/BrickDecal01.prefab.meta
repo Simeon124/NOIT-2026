@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4854cf69038394140bdc6f5e8cc050a0
+timeCreated: 1498699991
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94347
+  packageName: Decal Pack 1
+  packageVersion: 1.0
+  assetPath: Assets/DecalPack01/Prefabs/BrickDecal01.prefab
+  uploadId: 187399

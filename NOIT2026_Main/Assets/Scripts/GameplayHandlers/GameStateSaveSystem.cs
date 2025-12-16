@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,8 +18,6 @@ public class GameStateSaveSystem : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log(PlayerPrefs.GetFloat("Fragment 1"));
-        
         if (isCutscene == false)
         {
             //Save the level that the player is currently in
@@ -45,9 +44,12 @@ public class GameStateSaveSystem : MonoBehaviour
 
             //The fragments of the level are always two (for now) so we assign two values. This is not really a good practice, but in our case it is manageable
             //2 - enabled, 1- disabled, 0 - null.
-            if (PlayerPrefs.GetInt("Fragment 1") != 0 && PlayerPrefs.GetInt("Fragment 2") == 0)
+            if (PlayerPrefs.GetInt("Fragment 1") != 1)
             {
                 PlayerPrefs.SetInt("Fragment 1", 2);
+            }
+            else if (PlayerPrefs.GetInt("Fragment 2") != 1)
+            {
                 PlayerPrefs.SetInt("Fragment 2", 2);
             }
             
@@ -70,19 +72,35 @@ public class GameStateSaveSystem : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerPosZ", player.transform.position.z);
     }
 
+    private void Update()
+    {
+        //Debug.Log("Fragment 1 state: " + PlayerPrefs.GetFloat("Fragment 1"));
+        //Debug.Log("Fragment 2 state: " +PlayerPrefs.GetFloat("Fragment 2"));
+    }
+
     public void Fragment1Disable()
     {
+        Debug.Log("Disable Fragment 1");
         PlayerPrefs.SetInt("Fragment 1", 1);
     }
 
     public void Fragment2Disable()
     {
+        Debug.Log("Disable Fragment 2");
         PlayerPrefs.SetInt("Fragment 2", 1);
+        
     }
 
     public void ClearFragments()
     {
         PlayerPrefs.SetInt("Fragment 1", 0);
         PlayerPrefs.SetInt("Fragment 2", 0);
+    }
+    
+    public void ClearPositions()
+    {
+        PlayerPrefs.SetFloat("PlayerPosX", 0);
+        PlayerPrefs.SetFloat("PlayerPosY", 0);
+        PlayerPrefs.SetFloat("PlayerPosZ", 0);
     }
 }

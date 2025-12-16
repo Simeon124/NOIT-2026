@@ -182,14 +182,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.9
+  - time: 0.51666665
     functionName: Fragment1Disable
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.95
+  - time: 2.9833333
     functionName: ChangeToSceneIndex
     data: 
     objectReferenceParameter: {fileID: 0}

@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class StressBarManager : MonoBehaviour
 {
+    
+    //TODO: MAKE FAIL LOGIC - IF STRESS IS TOO HIGH - FAIL OR SCORE RESETS
     public Slider StressBar;
     public float ReturnTime = 0;
     public float ReturnValue = 0;

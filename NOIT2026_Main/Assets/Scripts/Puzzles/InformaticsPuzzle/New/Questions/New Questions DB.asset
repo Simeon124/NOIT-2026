@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5f0c146d7f6ea7c97c637d4d9af9fb, type: 3}
+  m_Name: New Questions DB
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionsDB
+  QuestionCollection:
+  - Difficulty: 0
+    QuestionText: Question0
+    Answers:
+    - AnswerText: Answer1
+      IsCorrect: 1
+    - AnswerText: Answer2
+      IsCorrect: 0
+    - AnswerText: Answer3
+      IsCorrect: 0
+  - Difficulty: 0
+    QuestionText: Question1
+    Answers:
+    - AnswerText: Answer1
+      IsCorrect: 1
+    - AnswerText: Answer2
+      IsCorrect: 0
+    - AnswerText: Answer3
+      IsCorrect: 0
+  - Difficulty: 0
+    QuestionText: Question2
+    Answers:
+    - AnswerText: Answer1
+      IsCorrect: 1
+    - AnswerText: Answer2
+      IsCorrect: 0
+    - AnswerText: Answer3
+      IsCorrect: 0
+  - Difficulty: 0
+    QuestionText: Question3
+    Answers:
+    - AnswerText: Answer1
+      IsCorrect: 1
+    - AnswerText: Answer2
+      IsCorrect: 0
+    - AnswerText: Answer3
+      IsCorrect: 0
+  - Difficulty: 0
+    QuestionText: Question4
+    Answers:
+    - AnswerText: Answer1
+      IsCorrect: 1
+    - AnswerText: Answer2
+      IsCorrect: 0
+    - AnswerText: Answer3
+      IsCorrect: 0

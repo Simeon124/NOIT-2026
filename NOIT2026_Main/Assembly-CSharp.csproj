@@ -52,13 +52,16 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/MotionBlur.cs" />
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/MovementTopDown.cs" />
     <Compile Include="Assets/Scripts/Player/Movement.cs" />
+    <Compile Include="Assets/Scripts/GameplayHandlers/BackgroundAudioHandler.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/BlurOptimized.cs" />
     <Compile Include="Assets/Scripts/Tutorial/HouseEnterTutorial.cs" />
     <Compile Include="Assets/Sprites/Grass And Flowers Pack 1/Example Scene/SimpleTextureDrawing.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ContrastEnhance.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/QuestionsDB.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndGrain.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/BloomOptimized.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ContrastStretch.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/ButtonAnswerModel.cs" />
     <Compile Include="Assets/Models/Props and Furniture/Free Wood Door Pack/Script/Door.cs" />
     <Compile Include="Assets/Scripts/Player/EnemySightDetection.cs" />
     <Compile Include="Assets/Scripts/Cutscenes/GameLevelLoader.cs" />
@@ -72,6 +75,8 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/GlobalFog.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsHelper.cs" />
     <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/Interactable.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/InformaticsPuzzleManager.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/Answer.cs" />
     <Compile Include="Assets/Scripts/MiscHandlers/HouseHandler.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/ButtonRandomizer.cs" />
     <Compile Include="Assets/Scripts/Cutscenes/AnimationSceneChangeManager.cs" />
@@ -80,6 +85,7 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionLookup.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets/Scripts/Puzzles/GroupPhotoPuzzle/ButtonPick1.cs" />
+    <Compile Include="Assets/Scripts/ForPrototyping/DisplayPlayerPrefs.cs" />
     <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/DnevnikMehanikaSetup.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/StressBarManager.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Twirl.cs" />
@@ -92,7 +98,6 @@
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/ButtonPick.cs" />
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/pickUpScript2.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionCurves.cs" />
-    <Compile Include="Assets/Models/Outdoor/Rocks and Boulders 2/Shaders/RotateGameObject.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs" />
     <Compile Include="Assets/Scripts/Puzzles/GroupPhotoPuzzle/LoopButton.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/CameraMotionBlur.cs" />
@@ -104,6 +109,7 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Tonemapping.cs" />
     <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/HasLineOfSight.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/CreaseShading.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/Question.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Grayscale.cs" />
     <Compile Include="Assets/Models/Props and Furniture/Free Wood Door Pack/Script/CameraOpenDoor.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientOcclusion.cs" />
@@ -115,6 +121,7 @@
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/LaundryHandler.cs" />
     <Compile Include="Assets/Scripts/UI/Cutscenes/SubtitleManagmentSystem.cs" />
     <Compile Include="Assets/Scripts/MiscHandlers/BasementHandler.cs" />
+    <Compile Include="Assets/Scripts/Tutorial/ControlsTutorialHandlerSystem.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs" />
     <Compile Include="Assets/Scripts/Player/LookControl.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/EdgeDetection.cs" />
@@ -136,7 +143,6 @@
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/Projectors/Shaders/ProjectorMultiply.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/DLAA.shader" />
-    <None Include="Assets/Models/Outdoor/Rocks and Boulders 2/Shaders/Blend SM2.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/frag_ao.cginc" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAAPreset3.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/CameraMotionBlurDX11.shader" />
@@ -173,7 +179,6 @@
     <None Include="Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/SepiaToneEffect.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrection3DLut.shader" />
-    <None Include="Assets/Models/Outdoor/Rocks and Boulders 2/Shaders/Blend SM3.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/SimpleClear.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ContrastComposite.shader" />
     <None Include="Assets/Models/Outdoor/KajamansRoads/Free/ReadMe.txt" />
@@ -188,7 +193,6 @@
     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonLit.shader" />
-    <None Include="Assets/Models/Outdoor/Rocks and Boulders 2/Shaders/shader info.txt" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/MobileBloom.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendForBloom.shader" />
@@ -595,22 +599,22 @@
       <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.ext.nunit@b16e6d09cd93/net40/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/PackageCache/com.unity.ext.nunit@b16e6d09cd93/net40/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Hashing">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.Tests/System.IO.Hashing/System.IO.Hashing.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.Tests/System.IO.Hashing/System.IO.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.nuget.mono-cecil@d78732e851eb/Mono.Cecil.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/PackageCache/com.unity.nuget.mono-cecil@d78732e851eb/Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/PackageCache/com.unity.collections@aea9d3bd5e19/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll</HintPath>
@@ -979,193 +983,193 @@
       <HintPath>/home/simo/Programs/Programming/Unity/6000.2.12f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.SysrootPackage.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TerrainTools">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Sysroot.Linux_x86_64">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Common">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TerrainTools.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Runtime">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Toolchain.Linux-x86_64">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Settings.Editor">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/Unity.Settings.Editor.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Settings.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026/NOIT2026_Main/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

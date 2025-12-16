@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: adf4db7b4bea5844e9638fbd0cd77a9a
+timeCreated: 1498700539
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 94347
+  packageName: Decal Pack 1
+  packageVersion: 1.0
+  assetPath: Assets/DecalPack01/Materials/BrickDamageDecal06.mat
+  uploadId: 187399

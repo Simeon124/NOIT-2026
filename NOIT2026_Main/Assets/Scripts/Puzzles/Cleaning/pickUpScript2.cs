@@ -24,8 +24,8 @@ public class pickUpScript2 : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
             TryPick();
 
-        if (Input.GetMouseButtonUp(0))
-            Drop();
+        //if (Input.GetMouseButtonUp(0))
+        //    Drop();
     }
 
     void FixedUpdate()

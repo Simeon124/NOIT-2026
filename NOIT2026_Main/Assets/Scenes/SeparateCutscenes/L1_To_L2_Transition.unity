@@ -4020,6 +4020,7 @@ GameObject:
   - component: {fileID: 956903508}
   - component: {fileID: 956903509}
   - component: {fileID: 956903510}
+  - component: {fileID: 956903511}
   m_Layer: 0
   m_Name: Act
   m_TagString: Untagged
@@ -4131,6 +4132,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff3a4039ca3a12c091678b7a6bdee30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationSceneChangeManager
+--- !u!114 &956903511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956903506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea0076a1821573445ab0c3cd2e064da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameStateSaveSystem
+  currentLevel: 0
+  fragments: []
+  isCutscene: 1
+  player: {fileID: 0}
 --- !u!1001 &961168512
 PrefabInstance:
   m_ObjectHideFlags: 0

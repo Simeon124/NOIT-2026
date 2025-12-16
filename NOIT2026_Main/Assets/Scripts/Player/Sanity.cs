@@ -16,9 +16,9 @@ public class Sanity : MonoBehaviour
 
     [SerializeField] Volume insanityVolume;
 
-    [SerializeField] bool isInInsanityZone = false;
+    public bool isInInsanityZone = false;
 
-    [SerializeField] List<string> currentZones = new List<string>();
+    public List<string> currentZones = new List<string>();
 
     private void Update()
     {

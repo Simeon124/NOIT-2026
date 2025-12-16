@@ -7304,7 +7304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0417\u0430\u0433\u043B\u0430\u0432\u0438\u0435"
+  m_text: "\u041D\u0410\u0427\u0418\u0421\u0422\u041E"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 119077ccca4efa590afba5b4d1231a8e, type: 2}
   m_sharedMaterial: {fileID: 8193351975892225851, guid: 119077ccca4efa590afba5b4d1231a8e, type: 2}
@@ -10588,6 +10588,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1978256623785884555, guid: 8b4fb008ebe10a17e92148184bda2f92, type: 3}
+      propertyPath: m_Name
+      value: ContinueGameButton
+      objectReference: {fileID: 0}
     - target: {fileID: 2208208199626654267, guid: 8b4fb008ebe10a17e92148184bda2f92, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10619,6 +10623,10 @@ PrefabInstance:
     - target: {fileID: 3957367299548412411, guid: 8b4fb008ebe10a17e92148184bda2f92, type: 3}
       propertyPath: PlayButtonIndex
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4999713377360540121, guid: 8b4fb008ebe10a17e92148184bda2f92, type: 3}
+      propertyPath: m_text
+      value: "\u041F\u0420\u041E\u0414\u042A\u041B\u0416\u0418"
       objectReference: {fileID: 0}
     - target: {fileID: 5258406091404440670, guid: 8b4fb008ebe10a17e92148184bda2f92, type: 3}
       propertyPath: m_AnchorMax.y

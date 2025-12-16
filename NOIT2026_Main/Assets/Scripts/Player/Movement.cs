@@ -1,62 +1,56 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Movement : MonoBehaviour
 {
-    [Header("Controls")]
-    public KeyCode spaceKey;
+    //Temporary bools used in other scripts
+    public bool isInHouse = false;
+
+    public Sanity sanityScr;
+
+    [Header("Controls")] public KeyCode spaceKey;
     public KeyCode sprintKey;
     public KeyCode interactKey;
 
-    [Header("Movement")]
-    [SerializeField] private float speed;
+    [Header("Movement")] [SerializeField] private float speed;
     [SerializeField] private float sprintSpeed;
     private float normalSpeed;
     bool sprinting;
+    bool isPlaying = false; //Check for SFX
+    [SerializeField] private float walkingAudoDilay;
+    [SerializeField] private float runningAudoDilay;
+    [SerializeField] AudioSource walkingSFXSource;
+    [SerializeField] AudioSource runningSFXSource;
+    [SerializeField] private AudioClip[] walkingSFXCollection;
+    [SerializeField] private AudioClip[] runningSFXCollection;
+
+    [SerializeField] private AudioClip[] indoorWalkingSFXCollection;
+    [SerializeField] private AudioClip[] indoorRunningSFXCollection;
+
     [SerializeField] private float jumpForce;
+
     //[SerializeField] private Transform hips;
     Rigidbody rb;
     [SerializeField] Transform groundCheckPos;
     [SerializeField] bool isGrounded;
 
-    [Header("Stamina")]
-    public float stamina;
+    [Header("Stamina")] public float stamina;
     [SerializeField] float staminaResetMultiplier;
     float maxStamina;
     bool hasStamina;
     bool isNotMoving;
 
-    [Header("SFX")]
-    [SerializeField]
-    AudioSource footstepsSFXAudioSource;
-
-    [SerializeField]
-    AudioSource jumpSFXAudioSource;
-
-    [SerializeField]
-    AudioSource landingSFXAudioSource;
-
-    [SerializeField]
-    AudioSource punchingSFXAudioSource;
-
-    [SerializeField]
-    AudioClip[] jumpsSFX;
-
-    [SerializeField]
-    AudioClip[] footstepsSFX;
-
-    [SerializeField]
-    AudioClip[] landingsSFX;
-
-    [SerializeField]
-    AudioClip[] punchesSFX;
-
     Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
+        sanityScr = GetComponent<Sanity>();
+
         normalSpeed = speed;
         rb = GetComponent<Rigidbody>();
         /*/
@@ -64,13 +58,11 @@ public class Movement : MonoBehaviour
         /*/
         maxStamina = stamina;
         hasStamina = true;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown(spaceKey) && isGrounded == true && hasStamina == true)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -79,15 +71,14 @@ public class Movement : MonoBehaviour
             /*/
             stamina -= 20;
         }
-        Sprinting(sprintSpeed);
 
+        Sprinting(sprintSpeed);
 
 
         //Stamina
         if (stamina < maxStamina && stamina > 0 && sprinting == false && isGrounded == true)
         {
             StartCoroutine(StaminaResetter());
-
         }
         else if (stamina <= 0)
         {
@@ -95,15 +86,13 @@ public class Movement : MonoBehaviour
             hasStamina = false;
             StartCoroutine(StaminaResetter(3));
         }
+
         if (stamina > 1)
         {
             hasStamina = true;
         }
-
-
-
-
     }
+
     private void FixedUpdate()
     {
         isGrounded = Physics.CheckSphere(groundCheckPos.position, 0.5f, 7);
@@ -136,6 +125,7 @@ public class Movement : MonoBehaviour
             isNotMoving = true;
         }
 
+        HandleSFX();
 
 
         //Stamina
@@ -149,6 +139,7 @@ public class Movement : MonoBehaviour
             hasStamina = false;
             StartCoroutine(StaminaResetter(3));
         }
+
         if (stamina > 1)
         {
             hasStamina = true;
@@ -156,17 +147,70 @@ public class Movement : MonoBehaviour
 
         Vector3 movementDir = xAxis * gameObject.transform.right + yAxis * gameObject.transform.forward;
         rb.MovePosition(rb.position + movementDir * speed * Time.fixedDeltaTime);
+    }
 
+    private void HandleSFX()
+    {
+        if (!isPlaying)
+        {
+            if (sanityScr != null)
+            {
+                if (sanityScr.currentZones.Contains("InsanityZone") || sanityScr.currentZones.Contains("SafeZone"))
+                {
+                    if (!isNotMoving && !sprinting)
+                    {
+                        walkingSFXSource.clip =
+                            indoorWalkingSFXCollection[Random.Range(0, indoorWalkingSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudoDilay));
+                    }
 
+                    if (sprinting == true)
+                    {
+                        runningSFXSource.clip =
+                            indoorRunningSFXCollection[Random.Range(0, indoorRunningSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudoDilay));
+                    }
+                }
+                else
+                {
+                    if (!isNotMoving && !sprinting)
+                    {
+                        walkingSFXSource.clip = walkingSFXCollection[Random.Range(0, walkingSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudoDilay));
+                    }
+
+                    if (sprinting == true)
+                    {
+                        runningSFXSource.clip = runningSFXCollection[Random.Range(0, runningSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudoDilay));
+                    }
+                }
+            }
+
+            if (isInHouse)
+            {
+                if (!isNotMoving && !sprinting)
+                {
+                    walkingSFXSource.clip =
+                        indoorWalkingSFXCollection[Random.Range(0, indoorWalkingSFXCollection.Length)];
+                    StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudoDilay));
+                }
+
+                if (sprinting == true)
+                {
+                    runningSFXSource.clip =
+                        indoorRunningSFXCollection[Random.Range(0, indoorRunningSFXCollection.Length)];
+                    StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudoDilay));
+                }
+            }
+        }
     }
 
     public void Sprinting(float sprintSpeed)
     {
-
         if (Input.GetKeyDown(sprintKey) && hasStamina)
         {
             sprinting = true;
-
         }
         else if (Input.GetKeyUp(sprintKey))
         {
@@ -193,7 +237,6 @@ public class Movement : MonoBehaviour
             {
                 sprinting = false;
             }
-
         }
         else if (sprinting == false || hasStamina == false)
         {
@@ -206,29 +249,37 @@ public class Movement : MonoBehaviour
     }
 
 
+    public IEnumerator PlayAudioWithDelay(AudioSource source, float delay = 0)
+    {
+        isPlaying = true;
+        source.Play();
+        if (delay == 0)
+        {
+            yield return new WaitForSeconds(source.clip.length);
+        }
+        else
+        {
+            yield return new WaitForSeconds(delay);
+        }
+
+        isPlaying = false;
+    }
+
     public IEnumerator StaminaResetter(float delay = 2)
     {
-
         yield return new WaitForSeconds(delay);
 
         if (sprinting == false && isGrounded == true)
         {
-
-
             if (stamina <= maxStamina && sprinting == false && isGrounded == true)
             {
                 stamina += Time.deltaTime * 1.3f;
-
             }
-
         }
         else
         {
             StopCoroutine(StaminaResetter());
         }
-
-
-
     }
 
     private void OnDrawGizmos()
@@ -237,28 +288,19 @@ public class Movement : MonoBehaviour
         Gizmos.DrawSphere(groundCheckPos.position, 0.2f);
     }
 
-    public void PlayFootstepsSound()
+    private void OnTriggerEnter(Collider other)
     {
-        footstepsSFXAudioSource.clip = footstepsSFX[Random.Range(0, footstepsSFX.Length)];
-        footstepsSFXAudioSource.PlayOneShot(footstepsSFXAudioSource.clip);
+        if (other.gameObject.name == "MainHouse" || other.gameObject.tag == "InsanityZone")
+        {
+            isInHouse = true;
+        }
     }
 
-    public void PlayJumpSound()
+    void OnTriggerExit(Collider other)
     {
-        jumpSFXAudioSource.clip = jumpsSFX[Random.Range(0, jumpsSFX.Length)];
-        jumpSFXAudioSource.PlayOneShot(jumpSFXAudioSource.clip);
-    }
-
-    public void PlayLandingSound()
-    {
-        landingSFXAudioSource.clip = landingsSFX[Random.Range(0, landingsSFX.Length)];
-        landingSFXAudioSource.PlayOneShot(landingSFXAudioSource.clip);
-    }
-
-    public void PlayPunchSound()
-    {
-        punchingSFXAudioSource.clip = punchesSFX[Random.Range(0, punchesSFX.Length)];
-        punchingSFXAudioSource.PlayOneShot(punchingSFXAudioSource.clip);
+        if (other.gameObject.name == "MainHouse")
+        {
+            isInHouse = false;
+        }
     }
 }
-
