@@ -9,6 +9,7 @@ TagManager:
   - SafeZone
   - MRUSOTIQ
   - Clothing
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Door
   - 
   - 
   - 

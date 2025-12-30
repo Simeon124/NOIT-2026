@@ -1,14 +1,26 @@
+using System;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Flashlight : MonoBehaviour
 {
+    KeyboardDatabaseDTO keyProfile;
     [SerializeField] GameObject flashlight;
     [SerializeField] bool isOn = false;
-    [SerializeField] KeyCode flashlightKey;
-    
+    [SerializeField] Image flashlightImage;
+    private Movement movement;
+
+    private void Start()
+    {
+        keyProfile = JsonUtility.FromJson<KeyboardDatabaseDTO>(PlayerPrefs.GetString(GlobalConfig.keybindSavePropertyName));
+        movement = GetComponent<Movement>();
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(flashlightKey))
+        var flashlightBtnPressed = Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Flashlight).Value);
+        if (flashlightBtnPressed)
         {
             isOn = !isOn;
         }
@@ -21,10 +33,12 @@ public class Flashlight : MonoBehaviour
     {
         if (isOn)
         {
+            flashlightImage.color = new Color(flashlightImage.color.r, flashlightImage.color.g, flashlightImage.color.b, 1f);
             flashlight.SetActive(true);
         }
         else
         {
+            flashlightImage.color = new Color(flashlightImage.color.r, flashlightImage.color.g, flashlightImage.color.b, 0.15f);
             flashlight.SetActive(false);
         }
     }

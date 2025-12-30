@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionRamp.cs" />
+    <Compile Include="Assets/Sprites/Icons/_Heathen Engineering/Samples/UX Examples/Flat Icons [Free]/ToggleSetAnimatorBoolean.cs" />
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/MovementNormal.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Blur.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/MotionBlur.cs" />
@@ -59,9 +60,11 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ContrastEnhance.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/QuestionsDB.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndGrain.cs" />
+    <Compile Include="Assets/Scripts/UI/Settings/KeyboardDatabase.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/BloomOptimized.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ContrastStretch.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/ButtonAnswerModel.cs" />
+    <Compile Include="Assets/Scripts/GameplayHandlers/GlobalIngameTimeHandler.cs" />
     <Compile Include="Assets/Models/Props and Furniture/Free Wood Door Pack/Script/Door.cs" />
     <Compile Include="Assets/Scripts/Player/EnemySightDetection.cs" />
     <Compile Include="Assets/Scripts/Cutscenes/GameLevelLoader.cs" />
@@ -76,6 +79,7 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsHelper.cs" />
     <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/Interactable.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/InformaticsPuzzleManager.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/InterludeNote.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/Answer.cs" />
     <Compile Include="Assets/Scripts/MiscHandlers/HouseHandler.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/ButtonRandomizer.cs" />
@@ -84,6 +88,7 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Fisheye.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionLookup.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/VignetteAndChromaticAberration.cs" />
+    <Compile Include="Assets/Scripts/GameplayHandlers/GlobalConfig.cs" />
     <Compile Include="Assets/Scripts/Puzzles/GroupPhotoPuzzle/ButtonPick1.cs" />
     <Compile Include="Assets/Scripts/ForPrototyping/DisplayPlayerPrefs.cs" />
     <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/DnevnikMehanikaSetup.cs" />
@@ -99,16 +104,22 @@
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/pickUpScript2.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionCurves.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs" />
+    <Compile Include="Assets/InputSystem_Actions.cs" />
     <Compile Include="Assets/Scripts/Puzzles/GroupPhotoPuzzle/LoopButton.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/CameraMotionBlur.cs" />
     <Compile Include="Assets/Scripts/ForPrototyping/TeleportToAScene.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/UI/MainMenu/MainMenuUIHandler.cs" />
+    <Compile Include="Assets/Scripts/UI/Environment/EnvironmentalHelperUIHandler.cs" />
+    <Compile Include="Assets/Scripts/GameplayHandlers/InGameUIHandler.cs" />
+    <Compile Include="Assets/Scripts/UI/Settings/KeybindUI.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/SepiaTone.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/InterludeNoteHandler.cs" />
     <Compile Include="Assets/Scripts/Tutorial/FragmentTutorial.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Tonemapping.cs" />
     <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/HasLineOfSight.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/CreaseShading.cs" />
+    <Compile Include="Assets/Scripts/UI/ProgressionMenu/ProgressionMenuHandler.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/Question.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Grayscale.cs" />
     <Compile Include="Assets/Models/Props and Furniture/Free Wood Door Pack/Script/CameraOpenDoor.cs" />
@@ -118,10 +129,12 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/TiltShift.cs" />
     <Compile Include="Assets/Scripts/Puzzles/GroupPhotoPuzzle/RandomPosition.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Quads.cs" />
+    <Compile Include="Assets/Scripts/UI/Settings/SettingsManager.cs" />
     <Compile Include="Assets/Scripts/Puzzles/Cleaning/LaundryHandler.cs" />
     <Compile Include="Assets/Scripts/UI/Cutscenes/SubtitleManagmentSystem.cs" />
     <Compile Include="Assets/Scripts/MiscHandlers/BasementHandler.cs" />
     <Compile Include="Assets/Scripts/Tutorial/ControlsTutorialHandlerSystem.cs" />
+    <Compile Include="Assets/Scripts/UI/Settings/KeybindManager.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs" />
     <Compile Include="Assets/Scripts/Player/LookControl.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/EdgeDetection.cs" />
@@ -217,6 +230,7 @@
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ChromaticAberrationShader.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/NoiseAndGrainDX11.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/SeparableWeightedBlurDof34.shader" />
+    <None Include="Assets/Sprites/Icons/_Heathen Engineering/Documentation/UX/Flat Icons [Free]/Read Me.txt" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/BlendModesOverlay.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ToonShading/Shaders/ToonBasicOutline.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/DepthOfFieldScatter.shader" />

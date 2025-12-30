@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 public class Movement : MonoBehaviour
@@ -11,12 +13,11 @@ public class Movement : MonoBehaviour
     public bool isInHouse = false;
 
     public Sanity sanityScr;
+    
+    KeyboardDatabaseDTO keyProfile;
 
-    [Header("Controls")] public KeyCode spaceKey;
-    public KeyCode sprintKey;
-    public KeyCode interactKey;
-
-    [Header("Movement")] [SerializeField] private float speed;
+    [Header("Movement")] 
+    [SerializeField] private float speed;
     [SerializeField] private float sprintSpeed;
     private float normalSpeed;
     bool sprinting;
@@ -49,13 +50,11 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        keyProfile = JsonUtility.FromJson<KeyboardDatabaseDTO>(PlayerPrefs.GetString(GlobalConfig.keybindSavePropertyName));
         sanityScr = GetComponent<Sanity>();
 
         normalSpeed = speed;
         rb = GetComponent<Rigidbody>();
-        /*/
-        anim = GetComponent<Animator>();
-        /*/
         maxStamina = stamina;
         hasStamina = true;
     }
@@ -63,12 +62,9 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(spaceKey) && isGrounded == true && hasStamina == true)
+        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Jump).Value) && isGrounded == true && hasStamina == true)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            /*/
-            anim.SetBool("isGrounded", false);
-            /*/
             stamina -= 20;
         }
 
@@ -96,39 +92,21 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         isGrounded = Physics.CheckSphere(groundCheckPos.position, 0.5f, 7);
-
-        /*/
-            if (isGrounded == true)
-        {
-            anim.SetBool("isGrounded", true);
-        }
-        else
-        {
-            anim.SetBool("isGrounded", false);
-        }/*/
-
-        var xAxis = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        var yAxis = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        
+        var xAxis = Input.GetAxis("Horizontal");
+        var yAxis = Input.GetAxis("Vertical");
 
         if (xAxis != 0 || yAxis != 0)
         {
-            /*/
-            anim.SetBool("isWalking", true);
-            /*/
             isNotMoving = false;
         }
         else
         {
-            /*/
-            anim.SetBool("isWalking", false);
-            /*/
             isNotMoving = true;
         }
 
         HandleSFX();
-
-
-        //Stamina
+        
         if (stamina < maxStamina && stamina > 0 && sprinting == false && isGrounded == true)
         {
             StartCoroutine(StaminaResetter());
@@ -208,6 +186,7 @@ public class Movement : MonoBehaviour
 
     public void Sprinting(float sprintSpeed)
     {
+        var sprintKey = keyProfile.Actions.First(x => x.Key == Action.Sprint).Value;
         if (Input.GetKeyDown(sprintKey) && hasStamina)
         {
             sprinting = true;
@@ -229,9 +208,6 @@ public class Movement : MonoBehaviour
 
         if (sprinting == true && speed <= sprintSpeed && hasStamina == true)
         {
-            /*/
-            anim.SetBool("isRunning", true);
-            /*/
             speed += (Time.timeScale * 7) * Time.deltaTime;
             if (isNotMoving == true)
             {
@@ -241,10 +217,6 @@ public class Movement : MonoBehaviour
         else if (sprinting == false || hasStamina == false)
         {
             speed = normalSpeed;
-
-            /*/
-            anim.SetBool("isRunning", false);
-            /*/
         }
     }
 
