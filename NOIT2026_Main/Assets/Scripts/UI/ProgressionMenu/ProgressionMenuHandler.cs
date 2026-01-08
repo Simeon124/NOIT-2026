@@ -1,17 +1,19 @@
+using TMPro;
 using UnityEngine;
 
 public class ProgressionMenuHandler : MonoBehaviour
 {
-    [SerializeField] int currentLevel = 0;
-    [SerializeField] GameObject[] storySegmentsGameObjects;
-    void Start()
+    [SerializeField] private GameObject progressDescription;
+
+    public void ShowProgressDescription(string description)
     {
-        for (int i = 0; i <= currentLevel; i++)
-        {
-            if (i < storySegmentsGameObjects.Length)
-            {
-                storySegmentsGameObjects[i].SetActive(true);
-            }
-        }
+       var text =  progressDescription.GetComponentInChildren<TextMeshProUGUI>();
+       text.text = description;
+       progressDescription.SetActive(true);
+    }
+
+    public void HideProgressDescription()
+    {
+        progressDescription.SetActive(false);
     }
 }

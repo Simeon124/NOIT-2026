@@ -8,20 +8,36 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] GameObject controlsSettingsPanel;
     [SerializeField] GameObject generalSettingsPanel;
     
+    [SerializeField] GameObject generalSettingsToggleIcon;
+    [SerializeField] GameObject controlsSettingsToggleIcon;
+    
 
-    void ChangeVolume(Slider slider)
+    public void ChangeVolume(Slider slider)
     {
-        audioMixer.SetFloat("Volume", slider.value);
+        if (slider.value == slider.minValue)
+        {
+            audioMixer.SetFloat("Volume", -80);
+        }
+        else
+        {
+            audioMixer.SetFloat("Volume", slider.value);
+        }
     }
     
     public void ToggleGeneralSettings()
     {
+        generalSettingsToggleIcon.SetActive(true);
+        controlsSettingsToggleIcon.SetActive(false);
+        
         controlsSettingsPanel.SetActive(false);
         generalSettingsPanel.SetActive(true);
     }
 
     public void ToggleControlsSettings()
     {
+        controlsSettingsToggleIcon.SetActive(true);
+        generalSettingsToggleIcon.SetActive(false);
+        
         controlsSettingsPanel.SetActive(true);
         generalSettingsPanel.SetActive(false);
     }

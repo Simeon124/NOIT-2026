@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,12 +11,15 @@ public class TeleportToAScene : MonoBehaviour
     [SerializeField] int sceneIndex;
     Movement movement;
     KeyboardDatabaseDTO keyProfile;
+    [Header("Animation")]
+    Animator animator;
+    [SerializeField] float animationDuration;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         keyProfile = JsonUtility.FromJson<KeyboardDatabaseDTO>(PlayerPrefs.GetString(GlobalConfig.keybindSavePropertyName));
         movement = GameObject.FindAnyObjectByType<Movement>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,8 +33,24 @@ public class TeleportToAScene : MonoBehaviour
                 var saveSystem = FindAnyObjectByType<GameStateSaveSystem>();
                 saveSystem.SaveGame();
             }
-            SceneManager.LoadScene(sceneIndex);
+
+            if (animator != null)
+            {
+                animator.SetTrigger("interacted");
+                StartCoroutine(WaitForAnimation());
+            }
+            else
+            {
+                SceneManager.LoadScene(sceneIndex);
+            }
+            
         }
+    }
+
+    public IEnumerator WaitForAnimation()
+    {
+        yield return new WaitForSeconds(animationDuration);
+        SceneManager.LoadScene(sceneIndex);
     }
 
     private void OnTriggerEnter(Collider other)

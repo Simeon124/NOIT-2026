@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 1/Level1.unity
     guid: 66ff425795ef1b846af48bba45f58a05
   - enabled: 1
-    path: Assets/Scenes/Level 1/Puzzles/Classroom.unity
-    guid: 8d963c47e24604840bee70ddfaf78372
+    path: Assets/Scenes/Level 1/Puzzles/GroupPhotoPuzzle/Classroom.unity
+    guid: b6dc57871436f29a89be2582a48a6983
   - enabled: 1
     path: Assets/Scenes/Level 1/Puzzles/CleaningPuzzle.unity
     guid: 0b19cbde7a5016cc1ae3acccee2b6aa9

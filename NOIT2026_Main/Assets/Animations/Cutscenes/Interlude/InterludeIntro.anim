@@ -149,7 +149,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 17.3
+        time: 16.883333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -467,7 +467,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 17.3
+    m_StopTime: 16.883333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -497,7 +497,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 17.3
+        time: 16.883333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -1194,7 +1194,7 @@ AnimationClip:
   m_Events:
   - time: 7.766667
     functionName: ShowSubtitles
-    data: "Simoteus \u0432\u0438 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u044F"
+    data: "SIMOETUS \u0412\u0418 \u041F\u0420\u0415\u0414\u0421\u0422\u0410\u0412\u042F"
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

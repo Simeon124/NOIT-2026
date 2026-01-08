@@ -11,7 +11,7 @@ public class KeybindManager : MonoBehaviour
     Action currentListeningAction;
     
     [SerializeField] KeyboardDatabase defaultKeyboardDatabase;
-    KeyboardDatabaseDTO currentKeyboardDatabase;
+    KeyboardDatabaseDTO currentKeyboardDatabase = new KeyboardDatabaseDTO();
 
     [SerializeField] private GameObject listeningPanel;
     

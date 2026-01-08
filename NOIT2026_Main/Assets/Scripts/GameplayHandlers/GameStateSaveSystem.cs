@@ -72,12 +72,6 @@ public class GameStateSaveSystem : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerPosZ", player.transform.position.z);
     }
 
-    private void Update()
-    {
-        //Debug.Log("Fragment 1 state: " + PlayerPrefs.GetFloat("Fragment 1"));
-        //Debug.Log("Fragment 2 state: " +PlayerPrefs.GetFloat("Fragment 2"));
-    }
-
     public void Fragment1Disable()
     {
         Debug.Log("Disable Fragment 1");

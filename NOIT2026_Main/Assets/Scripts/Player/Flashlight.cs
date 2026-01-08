@@ -11,6 +11,9 @@ public class Flashlight : MonoBehaviour
     [SerializeField] Image flashlightImage;
     private Movement movement;
 
+    [SerializeField] private AudioSource turnOnSFX;
+    [SerializeField] private AudioSource turnOffSFX;
+
     private void Start()
     {
         keyProfile = JsonUtility.FromJson<KeyboardDatabaseDTO>(PlayerPrefs.GetString(GlobalConfig.keybindSavePropertyName));
@@ -23,6 +26,15 @@ public class Flashlight : MonoBehaviour
         if (flashlightBtnPressed)
         {
             isOn = !isOn;
+
+            if (isOn == false)
+            {
+                turnOffSFX.Play();
+            }
+            else
+            {
+                turnOnSFX.Play();
+            }
         }
 
         FlashlightControl();

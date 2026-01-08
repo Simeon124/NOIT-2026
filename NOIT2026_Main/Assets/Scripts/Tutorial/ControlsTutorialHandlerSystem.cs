@@ -1,17 +1,24 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 public class ControlsTutorialHandlerSystem : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI tutorialText;
+    [SerializeField] GameObject targetUIElement;
     [SerializeField] private KeyCode controlKey;
+    GlobalIngameTimeHandler globalIngameTimeHandler;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        globalIngameTimeHandler = GameObject.FindAnyObjectByType<GlobalIngameTimeHandler>();
+    }
+
     void Update()
     {
-        if (tutorialText.gameObject.activeSelf && Input.GetKey(controlKey))
+        if (targetUIElement.gameObject.activeSelf && Input.GetKeyUp(controlKey))
         {
-            tutorialText.gameObject.SetActive(false);
+            globalIngameTimeHandler.gameIsPaused = false;
+            targetUIElement.gameObject.SetActive(false);
             gameObject.SetActive(false);
         }
     }
@@ -20,7 +27,8 @@ public class ControlsTutorialHandlerSystem : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            tutorialText.gameObject.SetActive(true);
+            globalIngameTimeHandler.gameIsPaused = true;
+            targetUIElement.gameObject.SetActive(true);
         }
     }
 }
