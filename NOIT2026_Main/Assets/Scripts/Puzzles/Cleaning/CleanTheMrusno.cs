@@ -17,6 +17,8 @@ public class CleanTheMrusno : MonoBehaviour
 
     [SerializeField] private bool isHead;
 
+    [SerializeField] private AudioSource cleanSFX;
+
     [Header("UI")] 
     [SerializeField] Slider trashUIDisplay;
     int collectedTrashQuantity = 0;
@@ -69,6 +71,7 @@ public class CleanTheMrusno : MonoBehaviour
     {
         if(other.gameObject.tag == "MRUSOTIQ")
         {
+            cleanSFX.Play();
             collectedTrashQuantity++;
             Destroy(other.gameObject);
         }

@@ -15,7 +15,39 @@ public class GameStateSaveSystem : MonoBehaviour
     [SerializeField] private bool isCutscene;
 
     public GameObject player;
+    
+    public bool positionLoaded = false;
 
+    void LateUpdate()
+    {
+        if (isCutscene == false)
+        {
+            if (positionLoaded == false)
+            {
+                float savedPosX = PlayerPrefs.GetFloat("PlayerPosX");
+                float savedPosY = PlayerPrefs.GetFloat("PlayerPosY");
+                float savedPosZ = PlayerPrefs.GetFloat("PlayerPosZ");
+
+                Vector3 savedPos = new Vector3(savedPosX, savedPosY + 0.4f, savedPosZ);
+            
+                Debug.Log(savedPos);
+
+                if (savedPos != Vector3.zero)
+                {
+                    player.transform.position = savedPos;
+                    Debug.Log("Teleported");
+                }
+                else
+                {
+                    PlayerPrefs.SetFloat("PlayerPosX", player.transform.position.x);
+                    PlayerPrefs.SetFloat("PlayerPosY", player.transform.position.y);
+                    PlayerPrefs.SetFloat("PlayerPosZ", player.transform.position.z);
+                }
+            }
+        }
+        
+    }
+    
     private void Awake()
     {
         if (isCutscene == false)
@@ -24,23 +56,6 @@ public class GameStateSaveSystem : MonoBehaviour
             PlayerPrefs.SetInt("CurrentLevel", currentLevel);
             
             player = GameObject.FindWithTag("Player");
-
-            float savedPosX = PlayerPrefs.GetFloat("PlayerPosX");
-            float savedPosY = PlayerPrefs.GetFloat("PlayerPosY");
-            float savedPosZ = PlayerPrefs.GetFloat("PlayerPosZ");
-
-            Vector3 savedPos = new Vector3(savedPosX, savedPosY, savedPosZ);
-
-            if (savedPos != Vector3.zero)
-            {
-                player.transform.position = savedPos;
-            }
-            else
-            {
-                PlayerPrefs.SetFloat("PlayerPosX", player.transform.position.x);
-                PlayerPrefs.SetFloat("PlayerPosY", player.transform.position.y);
-                PlayerPrefs.SetFloat("PlayerPosZ", player.transform.position.z);
-            }
 
             //The fragments of the level are always two (for now) so we assign two values. This is not really a good practice, but in our case it is manageable
             //2 - enabled, 1- disabled, 0 - null.

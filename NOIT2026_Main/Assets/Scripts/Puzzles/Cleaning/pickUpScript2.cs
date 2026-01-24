@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class pickUpScript2 : MonoBehaviour
@@ -12,16 +13,19 @@ public class pickUpScript2 : MonoBehaviour
     ConfigurableJoint joint;
     GameObject anchorGO;
     Rigidbody anchorRb;
+    GameObject currentHoldingObject;
 
     Vector3 localHitOnPicked;   // anchor point in pickedRb local space
     Vector3 prevAnchorPos;
     Vector3 anchorVelocity;
     public Transform CenterPos;
     Quaternion prevPickedRotation;
+
+    [SerializeField] private string bucketGOTag;
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && currentHoldingObject == null)
             TryPick();
 
         //if (Input.GetMouseButtonUp(0))
@@ -55,17 +59,26 @@ public class pickUpScript2 : MonoBehaviour
     {
         Ray r = cam.ScreenPointToRay(Input.mousePosition);
         if (!Physics.Raycast(r, out RaycastHit hit, 100f)) return;
-        if (hit.rigidbody == null) return;
-        if (hit.rigidbody.isKinematic) return; // only pick dynamic rigidbodies
+        if (hit.transform.CompareTag(bucketGOTag))
+        {
+            pickedRb = hit.transform.gameObject.GetComponentsInChildren<Rigidbody>().First();
+            pickedRb.transform.position = cam.ScreenToWorldPoint(Input.mousePosition);
+            currentHoldingObject = pickedRb.transform.gameObject;
+            pickedRb.GetComponent<Collider>().isTrigger = true;
+        }
+        else
+        {
+            if (hit.rigidbody != null || hit.rigidbody == null) return;
+        }
 
-        pickedRb = hit.rigidbody;
-
+        
+        
         // increase collision fidelity while dragging
         pickedRb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         pickedRb.interpolation = RigidbodyInterpolation.Interpolate;
 
         // record depth & local hit point (so it doesn't snap to center)
-        localHitOnPicked = pickedRb.transform.InverseTransformPoint(hit.point);
+        localHitOnPicked = Vector3.zero; 
 
         // create a kinematic anchor at the hit point
         anchorGO = new GameObject("PickupAnchor");

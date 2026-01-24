@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,10 @@ public class LevelFinalizationHandling : MonoBehaviour
 {
     [SerializeField] private List<GameObject> fragments;
 
-    [SerializeField] private int transitionSceneIndex;
+    [SerializeField] private GameObject transitionAnimationGO;
+
+    [SerializeField] private GameObject playerGameObject;
+    [SerializeField] private GameObject backgSFX;
     
     [SerializeField] private GameStateSaveSystem gameStateSaveSystem;
 
@@ -16,7 +20,9 @@ public class LevelFinalizationHandling : MonoBehaviour
         if (fragments.TrueForAll(x => x.activeSelf == false))
         {
             gameStateSaveSystem.ClearFragments();
-            SceneManager.LoadScene(transitionSceneIndex);
+            transitionAnimationGO.SetActive(true);
+            playerGameObject.SetActive(false);
+            backgSFX.SetActive(false);
         }
     }
 }

@@ -8,6 +8,14 @@ public class DnevnikMehanikaSetup : MonoBehaviour
 {
     public Image panel;
     public HasLineOfSight PlayerLOS; // LOS == Line Of Sight
+    Movement playerMovement;
+
+    [Header("NPC Animations")] [SerializeField]
+    private string introTrigger;
+    Animator interactedObjectAnimator;
+
+    [SerializeField] private string outroTrigger;
+
     public GameObject text;
     int a;
     [SerializeField] private int puzzleDuration = 5; //Limiter for how many keys to press before ending.
@@ -15,10 +23,13 @@ public class DnevnikMehanikaSetup : MonoBehaviour
     public TextMeshProUGUI keyToPress;
     public KeyCode[] keys; // butonite po vreme na puzela
     Color c;
-    bool Playing = false,FadeInStarted;
+
+    bool Playing = false, FadeInStarted;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerMovement = PlayerLOS.gameObject.GetComponent<Movement>();
         text.SetActive(false);
     }
 
@@ -27,23 +38,32 @@ public class DnevnikMehanikaSetup : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && PlayerLOS.InLineOfSight) //puzzle start condition
         {
-            if (!FadeInStarted) 
-            { 
-                StopAllCoroutines(); StartCoroutine(FadeIn());
+            if (!FadeInStarted)
+            {
+                playerMovement.enabled = false;
+                interactedObjectAnimator = PlayerLOS.interactedObject.GetComponent<Animator>();
+                interactedObjectAnimator.SetTrigger(introTrigger);
+                
+                StopAllCoroutines();
+                StartCoroutine(FadeIn());
             }
-
             else
-            { 
-            StopAllCoroutines();
-            StartCoroutine(FadeOut());
+            {
+                StopAllCoroutines();
+                StartCoroutine(FadeOut());
             }
-            
         }
+
         if (Input.GetKeyDown(keys[a]) && Playing)
         {
+            var animator = text.GetComponentInParent(typeof(Animator)) as Animator;
+            animator.SetTrigger("pressed");
             counter++;
-            if (counter == puzzleDuration)
+            if (counter >= puzzleDuration)
             {
+                playerMovement.enabled = true;
+                interactedObjectAnimator.SetTrigger(outroTrigger);
+                counter = 0;
                 StopAllCoroutines();
                 StartCoroutine(FadeOut());
             }
@@ -53,12 +73,12 @@ public class DnevnikMehanikaSetup : MonoBehaviour
                 StartCoroutine(ButtonSeq());
             }
             //StopCoroutine(ButtonSeq());
-            
         }
-
     }
+
     IEnumerator FadeIn()
-    {   
+    {
+        yield return new WaitForSeconds(1);
         float initial = c.a;
         FadeInStarted = true;
         for (float t = 0; t < 2; t += Time.deltaTime)
@@ -69,10 +89,12 @@ public class DnevnikMehanikaSetup : MonoBehaviour
             panel.color = c;
             yield return null;
         }
+
         yield return new WaitForSeconds(1);
         Playing = true;
-        StartCoroutine(ButtonSeq()); 
+        StartCoroutine(ButtonSeq());
     }
+
     IEnumerator ButtonSeq()
     {
         text.SetActive(true);
@@ -81,6 +103,7 @@ public class DnevnikMehanikaSetup : MonoBehaviour
         yield return new WaitForSeconds(2);
         StartCoroutine(ButtonSeq());
     }
+
     IEnumerator FadeOut()
     {
         text.SetActive(false);
@@ -89,15 +112,11 @@ public class DnevnikMehanikaSetup : MonoBehaviour
         Playing = false;
         for (float t = 0; t < 2; t += Time.deltaTime)
         {
-            Debug.Log($"time: {t}");
             c = panel.color;
 
             c.a = Mathf.Lerp(initial, 0f, t);
             panel.color = c;
             yield return null;
         }
-        
-        
     }
-
 }

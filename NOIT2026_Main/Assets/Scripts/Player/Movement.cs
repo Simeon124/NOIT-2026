@@ -13,11 +13,10 @@ public class Movement : MonoBehaviour
     public bool isInHouse = false;
 
     public Sanity sanityScr;
-    
+
     KeyboardDatabaseDTO keyProfile;
 
-    [Header("Movement")] 
-    [SerializeField] private float speed;
+    [Header("Movement")] [SerializeField] private float speed;
     [SerializeField] private float sprintSpeed;
     private float normalSpeed;
     bool sprinting;
@@ -50,7 +49,12 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        keyProfile = JsonUtility.FromJson<KeyboardDatabaseDTO>(PlayerPrefs.GetString(GlobalConfig.keybindSavePropertyName));
+        isInHouse = false;
+        
+        anim = GetComponent<Animator>();
+
+        keyProfile =
+            JsonUtility.FromJson<KeyboardDatabaseDTO>(PlayerPrefs.GetString(GlobalConfig.keybindSavePropertyName));
         sanityScr = GetComponent<Sanity>();
 
         normalSpeed = speed;
@@ -62,7 +66,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Jump).Value) && isGrounded == true && hasStamina == true)
+        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Jump).Value) && isGrounded == true &&
+            hasStamina == true)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             stamina -= 20;
@@ -92,7 +97,7 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         isGrounded = Physics.CheckSphere(groundCheckPos.position, 0.5f, 7);
-        
+
         var xAxis = Input.GetAxis("Horizontal");
         var yAxis = Input.GetAxis("Vertical");
 
@@ -106,7 +111,7 @@ public class Movement : MonoBehaviour
         }
 
         HandleSFX();
-        
+
         if (stamina < maxStamina && stamina > 0 && sprinting == false && isGrounded == true)
         {
             StartCoroutine(StaminaResetter());
@@ -274,5 +279,15 @@ public class Movement : MonoBehaviour
         {
             isInHouse = false;
         }
+    }
+
+    public void NukeAnimations()
+    {
+        anim.applyRootMotion = true;
+        
+        //Because the animation overrides the position, we make sure we put the saved position script in LateUpdate in
+        // the GameStateSaveSystem script
+        var gameStateSaveSystem = FindAnyObjectByType<GameStateSaveSystem>();
+        gameStateSaveSystem.positionLoaded = true;
     }
 }

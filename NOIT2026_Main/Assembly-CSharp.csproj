@@ -82,6 +82,7 @@
     <Compile Include="Assets/Scripts/Puzzles/InterludeNote.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/Answer.cs" />
     <Compile Include="Assets/Scripts/MiscHandlers/HouseHandler.cs" />
+    <Compile Include="Assets/Scripts/DoorThingy/VelocityToSFX.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/ButtonRandomizer.cs" />
     <Compile Include="Assets/Scripts/Cutscenes/AnimationSceneChangeManager.cs" />
     <Compile Include="Assets/Scripts/Tutorial/MovementTutorial.cs" />
@@ -134,8 +135,8 @@
     <Compile Include="Assets/Scripts/UI/Cutscenes/SubtitleManagmentSystem.cs" />
     <Compile Include="Assets/Scripts/MiscHandlers/BasementHandler.cs" />
     <Compile Include="Assets/Scripts/Tutorial/ControlsTutorialHandlerSystem.cs" />
-    <Compile Include="Assets/DoorThingy/VelocityToSFX.cs" />
     <Compile Include="Assets/Scripts/UI/Settings/KeybindManager.cs" />
+    <Compile Include="Assets/Scripts/GameplayHandlers/SressTimeHandler.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs" />
     <Compile Include="Assets/Scenes/Level 1/Puzzles/GroupPhotoPuzzle/ButtonPick1.cs" />
     <Compile Include="Assets/Scripts/Player/LookControl.cs" />
@@ -203,6 +204,7 @@
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/BlurEffectConeTaps.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/Bokeh34.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrectionEffect.shader" />
+    <None Include="Assets/Models/Props and Furniture/VNB - Office Set/ReadMe.txt" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/FisheyeShader.shader" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlendOneOne.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />

@@ -32,6 +32,7 @@ public class TeleportToAScene : MonoBehaviour
             {
                 var saveSystem = FindAnyObjectByType<GameStateSaveSystem>();
                 saveSystem.SaveGame();
+                Debug.Log("Pos saved");
             }
 
             if (animator != null)

@@ -14,13 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestionsDB
   QuestionCollection:
   - Difficulty: 0
-    QuestionText: Question0
+    QuestionText: "\u041A\u0430\u043A\u0432\u0430 \u0435 \u0440\u0430\u0437\u043B\u0438\u043A\u0430\u0442\u0430
+      \u043C\u0435\u0436\u0434\u0443 RAM \u043F\u0430\u043C\u0435\u0442 \u0438 ROM
+      \u043F\u0430\u043C\u0435\u0442? "
     Answers:
-    - AnswerText: Answer1
+    - AnswerText: "ROM \u043C\u043E\u0436\u0435 \u0441\u0430\u043C\u043E \u0434\u0430
+        \u0441\u0435 \u0447\u0435\u0442\u0435 "
       IsCorrect: 1
-    - AnswerText: Answer2
+    - AnswerText: "RAM \u043C\u043E\u0436\u0435 \u0441\u0430\u043C\u043E \u0434\u0430
+        \u0441\u0435 \u0447\u0435\u0442\u0435 "
       IsCorrect: 0
-    - AnswerText: Answer3
+    - AnswerText: "ROM \u043C\u043E\u0436\u0435 \u0441\u0430\u043C\u043E \u0434\u0430
+        \u0441\u0435 \u0437\u0430\u043F\u0438\u0441\u0432\u0430 "
       IsCorrect: 0
   - Difficulty: 0
     QuestionText: Question1

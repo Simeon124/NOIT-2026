@@ -5638,6 +5638,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4049451774351053753, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       insertIndex: -1
       addedObject: {fileID: 652968500}
+    - targetCorrespondingSourceObject: {fileID: 4049451774351053753, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 652968502}
   m_SourcePrefab: {fileID: 100100000, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
 --- !u!20 &652968497 stripped
 Camera:
@@ -5708,6 +5711,28 @@ MonoBehaviour:
   inRange: 0
   yOffset: 3
   xOffset: 2
+--- !u!95 &652968502
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30849459}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b455bc22563d5372b8add2c10355cad0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &683185072
 Mesh:
   m_ObjectHideFlags: 0
@@ -28157,7 +28182,9 @@ MonoBehaviour:
   fragments:
   - {fileID: 7763024594419732608}
   - {fileID: 7763024596079669104}
-  transitionSceneIndex: 11
+  transitionAnimationGO: {fileID: 0}
+  playerGameObject: {fileID: 0}
+  backgSFX: {fileID: 0}
   gameStateSaveSystem: {fileID: 1817131747}
 --- !u!114 &5873518104210873211
 MonoBehaviour:
