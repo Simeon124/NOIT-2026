@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
     private float normalSpeed;
     bool sprinting;
     bool isPlaying = false; //Check for SFX
+    [SerializeField] private bool isInPuzzle;
     [SerializeField] private float walkingAudoDilay;
     [SerializeField] private float runningAudoDilay;
     [SerializeField] AudioSource walkingSFXSource;
@@ -136,6 +137,21 @@ public class Movement : MonoBehaviour
     {
         if (!isPlaying)
         {
+            if (isInPuzzle)
+            {
+                if (!isNotMoving && !sprinting)
+                {
+                    walkingSFXSource.clip = walkingSFXCollection[Random.Range(0, walkingSFXCollection.Length)];
+                    StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudoDilay));
+                }
+
+                if (sprinting == true)
+                {
+                    runningSFXSource.clip = runningSFXCollection[Random.Range(0, runningSFXCollection.Length)];
+                    StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudoDilay));
+                }
+            }
+            
             if (sanityScr != null)
             {
                 if (sanityScr.currentZones.Contains("InsanityZone") || sanityScr.currentZones.Contains("SafeZone"))

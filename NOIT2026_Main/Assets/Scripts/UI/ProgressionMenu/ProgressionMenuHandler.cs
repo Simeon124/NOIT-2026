@@ -5,10 +5,8 @@ public class ProgressionMenuHandler : MonoBehaviour
 {
     [SerializeField] private GameObject progressDescription;
 
-    public void ShowProgressDescription(string description)
+    public void ShowProgressDescription()
     {
-       var text =  progressDescription.GetComponentInChildren<TextMeshProUGUI>();
-       text.text = description;
        progressDescription.SetActive(true);
     }
 

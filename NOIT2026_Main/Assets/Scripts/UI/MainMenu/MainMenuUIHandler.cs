@@ -9,6 +9,7 @@ public class MainMenuUIHandler : MonoBehaviour
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject mainCamera;
     [SerializeField] private GameObject progressMenuPanel;
+    [SerializeField] AudioSource UIAudioSource;
 
     private void Start()
     {
@@ -31,5 +32,10 @@ public class MainMenuUIHandler : MonoBehaviour
         mainCamera.SetActive(!mainCamera.activeSelf);
         progressMenuPanel.SetActive(!progressMenuPanel.activeSelf);
         mainMenuPanel.SetActive(!mainMenuPanel.activeSelf);
+    }
+    
+    public void PlaySound()
+    {
+        UIAudioSource.PlayOneShot(UIAudioSource.clip);
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -13,9 +14,9 @@ public class SressTimeHandler : MonoBehaviour
     [SerializeField] TextMeshProUGUI secondsText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnEnable()
     {
-        StartCoroutine(Timer());
+        StartTimer();
     }
 
 
@@ -26,6 +27,11 @@ public class SressTimeHandler : MonoBehaviour
             minutesText.text = $"{minutes.ToString()}m";
             secondsText.text = $"{seconds.ToString()}s";
         }
+    }
+
+    public void StartTimer()
+    {
+        StartCoroutine(Timer());
     }
 
     public IEnumerator Timer()
@@ -44,5 +50,18 @@ public class SressTimeHandler : MonoBehaviour
             }
         }
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void AddSeconds(int inputSeconds)
+    {
+        if (seconds + inputSeconds > 60)
+        {
+            minutes++;
+            seconds = (seconds + inputSeconds) - 60;
+        }
+        else
+        {
+            seconds += inputSeconds;
+        }
     }
 }

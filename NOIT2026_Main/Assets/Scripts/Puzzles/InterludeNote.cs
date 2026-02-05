@@ -14,6 +14,7 @@ public class InterludeNote : MonoBehaviour
 
     [SerializeField] private GameObject noteUIElement;
     [SerializeField] private string text;
+    [SerializeField] AudioSource pageAudioSource;
     TextMeshProUGUI noteUIText;
 
     [SerializeField] float maxGlowIntensity;
@@ -38,6 +39,10 @@ public class InterludeNote : MonoBehaviour
     {
         if (inRange && Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Interact).Value))
         {
+            if (pageAudioSource != null)
+            {
+                pageAudioSource.Play();
+            }
             noteUIText = noteUIElement.GetComponentInChildren<TextMeshProUGUI>();
             noteUIText.text = text;
             globalIngameTimeHandler.gameIsPaused = true;

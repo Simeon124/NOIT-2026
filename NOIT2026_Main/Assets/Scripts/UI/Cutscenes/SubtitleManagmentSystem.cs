@@ -17,8 +17,11 @@ public class SubtitleManagmentSystem : MonoBehaviour
 
     private void Start()
     {
-        originalPosX = subtitleText.transform.position.x;
-        originalPosY = subtitleText.transform.position.y;
+        if (subtitleText != null)
+        {
+            originalPosX = subtitleText.transform.position.x;
+            originalPosY = subtitleText.transform.position.y;
+        }
     }
 
     public void ShowSubtitles(string text)
@@ -59,6 +62,6 @@ public class SubtitleManagmentSystem : MonoBehaviour
             yield return new WaitForSeconds(effectDurationSpeed);
         }
         
-        Camera.main.transform.position = new Vector3(originalPosX, originalPosY);
+        subtitleText.transform.position = new Vector3(originalPosX, originalPosY);
     }
 }

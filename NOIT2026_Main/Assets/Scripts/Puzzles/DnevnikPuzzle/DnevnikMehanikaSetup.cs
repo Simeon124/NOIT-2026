@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,8 @@ public class DnevnikMehanikaSetup : MonoBehaviour
     public Image panel;
     public HasLineOfSight PlayerLOS; // LOS == Line Of Sight
     Movement playerMovement;
+    
+    KeyboardDatabaseDTO keyProfile;
 
     [Header("NPC Animations")] [SerializeField]
     private string introTrigger;
@@ -29,6 +32,9 @@ public class DnevnikMehanikaSetup : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        keyProfile =
+            JsonUtility.FromJson<KeyboardDatabaseDTO>(PlayerPrefs.GetString(GlobalConfig.keybindSavePropertyName));
+        
         playerMovement = PlayerLOS.gameObject.GetComponent<Movement>();
         text.SetActive(false);
     }
@@ -36,7 +42,7 @@ public class DnevnikMehanikaSetup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && PlayerLOS.InLineOfSight) //puzzle start condition
+        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Interact).Value) && PlayerLOS.InLineOfSight) //puzzle start condition
         {
             if (!FadeInStarted)
             {
@@ -72,7 +78,6 @@ public class DnevnikMehanikaSetup : MonoBehaviour
                 StopAllCoroutines();
                 StartCoroutine(ButtonSeq());
             }
-            //StopCoroutine(ButtonSeq());
         }
     }
 

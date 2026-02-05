@@ -51,7 +51,6 @@ public class VelocityToSFX : MonoBehaviour
     }
     IEnumerator AudioPlayer()
     {
-        Debug.Log(speed);
         kreek.Play();
         yield return new WaitForSeconds(audioDuration); //lenght of audio clip
         readyToPlay = true;

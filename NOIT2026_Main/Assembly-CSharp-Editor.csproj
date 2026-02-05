@@ -912,6 +912,9 @@
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VectorGraphics.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Editor">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
     </Reference>
@@ -993,6 +996,9 @@
     <Reference Include="Unity.TerrainTools.Editor">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.003">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.003.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
@@ -1014,11 +1020,17 @@
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.003">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Toolchain.Linux-x86_64">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.Editor">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VectorGraphics">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VectorGraphics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>

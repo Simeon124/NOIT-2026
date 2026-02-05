@@ -5,6 +5,8 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using Cursor = UnityEngine.Cursor;
 using Random = UnityEngine.Random;
 
 public class InformaticsPuzzleManager : MonoBehaviour
@@ -12,12 +14,12 @@ public class InformaticsPuzzleManager : MonoBehaviour
     //This script manages all actions and handles all things connected to the Informatics Puzzle.
     //Here are all hard coded questions and they are picked on random
 
+    [SerializeField] private SressTimeHandler sressTimeHandler;
+    [SerializeField] private int secondsReward;
+    [SerializeField] StressBarManager stressBarManager;
     [SerializeField] QuestionsDB questionDatabase;
     List<Question> questionCollection;
     List<Question> currentQuestions = new List<Question>();
-
-    List<Question>
-        compensatingQuestions = new List<Question>(); //Questions that the player guessed wrong and need to try again
 
     [SerializeField] private int questionQuantity = 10; //Numbers of question to take from the question collection
     private int currentQuestionIndex = 0;
@@ -32,28 +34,26 @@ public class InformaticsPuzzleManager : MonoBehaviour
     private float animationDuration = 2f;
 
     [SerializeField] Animator pageFlipAnimator;
-    
-    [Header("EarthquakeEffect")]
-    [SerializeField] float effectDurationSpeed;
 
-    [SerializeField] private int effectCameraMultiplier;
-    [SerializeField] private int effectCameraFOVMultiplier;
+    [Header("EarthquakeEffect")] [SerializeField]
+    float effectDurationSpeed;
+
+    [SerializeField] private int effectMultiplier;
     [SerializeField] float effectDuration;
+
+    [SerializeField] private GameObject indicator;
+    [SerializeField] private Sprite wrongIndicatorIcon;
+    [SerializeField] private Sprite correctIndicatorIcon;
 
     bool effectFinished = false;
 
-    private float originalFOV;
-    
-    float originalPosX;
-    float originalPosY;
+    bool isStressed = false;
+
+    //Coroutine that are specific to stop
+    List<Coroutine> coroutineList = new List<Coroutine>();
 
     void Start()
     {
-        originalPosX = Camera.main.transform.position.x;
-        originalPosY = Camera.main.transform.position.y;
-        
-        originalFOV = Camera.main.fieldOfView;
-        
         Cursor.lockState = CursorLockMode.None;
 
         questionCollection = questionDatabase.QuestionCollection;
@@ -69,10 +69,33 @@ public class InformaticsPuzzleManager : MonoBehaviour
 
             currentQuestions.Add(questionCollection[randomIndex]);
         }
-        
+
         Debug.Log(String.Join(' ', currentQuestions));
 
         DisplayQuestion();
+    }
+
+    private void Update()
+    {
+        if (stressBarManager.StressBar.value > stressBarManager.HighStressValue && isStressed == false)
+        {
+            effectFinished = false;
+            foreach (var button in buttons)
+            {
+                var coroutine =
+                    StartCoroutine(Earthquake(button.transform, effectMultiplier, effectDurationSpeed,
+                        new Vector2(button.transform.position.x, button.transform.position.y)));
+                coroutineList.Add(coroutine);
+            }
+
+            isStressed = true;
+        }
+
+        if (stressBarManager.StressBar.value < stressBarManager.HighStressValue)
+        {
+            isStressed = false;
+            effectFinished = true;
+        }
     }
 
 
@@ -114,10 +137,7 @@ public class InformaticsPuzzleManager : MonoBehaviour
                 }
             }
 
-            if (currentQuestions[currentQuestionIndex].Answers[randomIndex].IsCorrect)
-            {
-                buttonAnswerComponent.IsCorrect = true;
-            }
+            buttonAnswerComponent.IsCorrect = currentQuestions[currentQuestionIndex].Answers[randomIndex].IsCorrect;
 
             buttonText.text = currentQuestions[currentQuestionIndex].Answers[randomIndex].AnswerText;
         }
@@ -135,9 +155,11 @@ public class InformaticsPuzzleManager : MonoBehaviour
 
     public void Answer(ButtonAnswerModel answer)
     {
-        Debug.Log(String.Join(' ', currentQuestions));
         if (answer.IsCorrect)
         {
+            StartCoroutine(Indicate(true));
+            stressBarManager.CorrectAns();
+            sressTimeHandler.AddSeconds(secondsReward);
             score++;
             currentQuestionIndex++;
             StartCoroutine(WaitForAnimationEnd());
@@ -145,9 +167,15 @@ public class InformaticsPuzzleManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine(Timer(effectDuration));
-            StartCoroutine(Earthquake());
-            compensatingQuestions.Add(currentQuestions[currentQuestionIndex]);
+            StartCoroutine(Indicate(false));
+            currentQuestions.Add(currentQuestions[currentQuestionIndex]);
+            score++;
+            currentQuestionIndex++;
+            StartCoroutine(WaitForAnimationEnd());
+            ChangeToNextQuestion();
+            stressBarManager.WrongAns();
+            //StartCoroutine(Timer(effectDuration));
+            //StartCoroutine(Earthquake(Camera.main.transform, effectDuration, effectCameraMultiplier));
         }
     }
 
@@ -162,32 +190,47 @@ public class InformaticsPuzzleManager : MonoBehaviour
         float timer = 0f;
         while (timer < deadline)
         {
-            Debug.Log(timer);
             timer += Time.deltaTime;
             yield return null;
         }
+
         effectFinished = true;
     }
-    
-    public IEnumerator Earthquake()
+
+    public IEnumerator Earthquake(Transform transform, float effectMultiplier, float effectDurationSpeed,
+        Vector2 originalPostition)
     {
         while (effectFinished == false)
         {
-            var randomPosX = originalPosX + Random.Range(-1 * effectCameraMultiplier, 1 * effectCameraMultiplier);
-            var randomPosY = originalPosY + Random.Range(-1 * effectCameraMultiplier, 1 * effectCameraMultiplier);
-            var randomFOV = originalFOV + Random.Range(-1 * effectCameraFOVMultiplier, 1 * effectCameraFOVMultiplier);
-            //Camera.main.transform.position = new Vector3(randomPosX, randomPosY);
-            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position,
+            var randomPosX = originalPostition.x + Random.Range(-1 * effectMultiplier, 1 * effectMultiplier);
+            var randomPosY = originalPostition.y + Random.Range(-1 * effectMultiplier, 1 * effectMultiplier);
+            transform.position = Vector3.Lerp(transform.position,
                 new Vector3(randomPosX, randomPosY), 0.2f);
-            Camera.main.fieldOfView = randomFOV;
             yield return new WaitForSeconds(effectDurationSpeed);
         }
-        
-        Camera.main.transform.position = new Vector3(originalPosX, originalPosY);
-        Camera.main.fieldOfView = originalFOV;
+
+        transform.position = new Vector3(originalPostition.x, originalPostition.y);
         effectFinished = false;
     }
+
+    public IEnumerator Indicate(bool isCorrect)
+    {
+        var indicatorImage = indicator.GetComponent<Image>();
+        if (isCorrect)
+        {
+            indicatorImage.sprite = correctIndicatorIcon;
+        }
+        else
+        {
+            indicatorImage.sprite = wrongIndicatorIcon;
+        }
+
+        indicator.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        indicator.SetActive(false);
+    }
 }
+
 
 public enum Difficulty
 {

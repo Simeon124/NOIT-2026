@@ -10,7 +10,7 @@ public class Interactable : MonoBehaviour
     public GameObject Player;
     [SerializeField] private bool isSceneChangeTrigger;
     [SerializeField] int transitionScene;
-    [SerializeField] private DnevnikMehanikaSetup dnevnikMehanikaSetup;
+//    [SerializeField] private DnevnikMehanikaSetup dnevnikMehanikaSetup;
     bool FadeInStarted;
     public bool LOSChecker;
     Color c;

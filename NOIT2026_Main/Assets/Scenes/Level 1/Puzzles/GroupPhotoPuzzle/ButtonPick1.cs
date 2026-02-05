@@ -50,7 +50,6 @@ public class ButtonPick1 : MonoBehaviour
     public void loselife()
     {
         anim.SetBool("Loss", true);
-        reloader.ReloadCurrentScene(9);
         if (lives <=0) { GameOver.SetActive(true); Time.timeScale = 0; }
         if (lives > 0) { lives--; }
     }

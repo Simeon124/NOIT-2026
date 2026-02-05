@@ -28,14 +28,11 @@ public class GameStateSaveSystem : MonoBehaviour
                 float savedPosY = PlayerPrefs.GetFloat("PlayerPosY");
                 float savedPosZ = PlayerPrefs.GetFloat("PlayerPosZ");
 
-                Vector3 savedPos = new Vector3(savedPosX, savedPosY + 0.4f, savedPosZ);
-            
-                Debug.Log(savedPos);
+                Vector3 savedPos = new Vector3(savedPosX, savedPosY, savedPosZ);
 
                 if (savedPos != Vector3.zero)
                 {
                     player.transform.position = savedPos;
-                    Debug.Log("Teleported");
                 }
                 else
                 {

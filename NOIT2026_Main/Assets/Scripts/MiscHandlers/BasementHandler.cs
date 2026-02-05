@@ -6,6 +6,7 @@ public class BasementHandler : MonoBehaviour
     [SerializeField] GameObject basementGameObject;
     [SerializeField] GameObject terrain;
     [SerializeField] int sanityValueTrigger;
+    [SerializeField] private bool isInInterlude = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,8 +24,11 @@ public class BasementHandler : MonoBehaviour
         }
         else
         {
-            basementGameObject.SetActive(false);
-            terrain.SetActive(true);
+            if (isInInterlude == false)
+            {
+                basementGameObject.SetActive(false);
+                terrain.SetActive(true);
+            }
         }
     }
 }
