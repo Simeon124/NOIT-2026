@@ -6,6 +6,7 @@ public class BackgroundAudioHandler : MonoBehaviour
     [SerializeField] private AudioSource backgroundWindAudio;
     [SerializeField] private float targetVolume;
     [SerializeField] private float targetPitch;
+    private bool isInside = false;
     Movement movementScript;
     float defaultWindAudioVolume;
 
@@ -19,15 +20,32 @@ public class BackgroundAudioHandler : MonoBehaviour
 
     void Update()
     {
-        if (movementScript.sanityScr.currentZones.Contains("InsanityZone") || movementScript.sanityScr.currentZones.Contains("SafeZone"))
+        if (movementScript.sanityScr != null)
         {
-            backgroundWindAudio.pitch = targetPitch;
-            backgroundWindAudio.volume = targetVolume;
+            if (movementScript.sanityScr.currentZones.Contains("InsanityZone") || movementScript.sanityScr.currentZones.Contains("SafeZone"))
+            {
+                backgroundWindAudio.pitch = targetPitch;
+                backgroundWindAudio.volume = targetVolume;
+            }
+            else
+            {
+                backgroundWindAudio.pitch = 1f;
+                backgroundWindAudio.volume = defaultWindAudioVolume;
+            }
         }
         else
         {
-            backgroundWindAudio.pitch = 1f;
-            backgroundWindAudio.volume = defaultWindAudioVolume;
+            if (movementScript.isInHouse)
+            {
+                backgroundWindAudio.pitch = targetPitch;
+                backgroundWindAudio.volume = targetVolume;
+            }
+            else
+            {
+                backgroundWindAudio.pitch = 1f;
+                backgroundWindAudio.volume = defaultWindAudioVolume;
+            }
         }
+        
     }
 }

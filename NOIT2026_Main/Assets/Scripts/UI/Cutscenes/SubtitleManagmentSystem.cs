@@ -8,8 +8,10 @@ public class SubtitleManagmentSystem : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI subtitleText;
     [SerializeField] float textAnimationDurationPerLetter;
-    [Header("Earthquake effect")]
-    [SerializeField] float earthquakeMultiplier;
+
+    [Header("Earthquake effect")] [SerializeField]
+    float earthquakeMultiplier;
+
     [SerializeField] private float effectDurationSpeed;
     private bool earthquakeEffectOn = false;
     float originalPosX;
@@ -51,7 +53,8 @@ public class SubtitleManagmentSystem : MonoBehaviour
             }
         }
     }
-    
+
+
     public IEnumerator Earthquake()
     {
         while (earthquakeEffectOn)
@@ -61,7 +64,7 @@ public class SubtitleManagmentSystem : MonoBehaviour
             subtitleText.transform.position = new Vector3(randomPosX, randomPosY);
             yield return new WaitForSeconds(effectDurationSpeed);
         }
-        
+
         subtitleText.transform.position = new Vector3(originalPosX, originalPosY);
     }
 }

@@ -2764,16 +2764,14 @@ AnimationClip:
     messageOptions: 0
   - time: 1.75
     functionName: ShowSubtitles
-    data: "\u0413\u043B\u0430\u0432\u0435\u043D \u0413\u0435\u0440\u043E\u0439:\\n\u041A\u044A\u0434\u0435
-      \u0441\u044A\u043C?"
+    data: "\u0411\u041E\u042F\u041D:\\n\u041A\u044A\u0434\u0435 \u0441\u044A\u043C?"
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 4.95
     functionName: ShowSubtitles
-    data: "\u0413\u043B\u0430\u0432\u0435\u043D \u0413\u0435\u0440\u043E\u0439:\\n\u041A\u0430\u043A\u0432\u043E
-      \u0435 \u0442\u043E\u0432\u0430?"
+    data: "\u0411\u041E\u042F\u041D:\\n\u041A\u0430\u043A\u0432\u043E \u0435 \u0442\u043E\u0432\u0430?"
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

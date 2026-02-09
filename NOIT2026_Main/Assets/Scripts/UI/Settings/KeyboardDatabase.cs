@@ -25,7 +25,7 @@ public class KeyDictionary
 public enum Action
 {
     Interact,
-    Jump,
+    Pause,
     Flashlight,
     Sprint
 }

@@ -34,6 +34,8 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private float jumpForce;
 
+    GlobalIngameTimeHandler globalIngameTimeHandler;
+    
     //[SerializeField] private Transform hips;
     Rigidbody rb;
     [SerializeField] Transform groundCheckPos;
@@ -47,9 +49,14 @@ public class Movement : MonoBehaviour
 
     Animator anim;
 
+    [SerializeField] private GameObject pauseMenu;
+
     // Start is called before the first frame update
     void Start()
     {
+        
+        globalIngameTimeHandler = FindObjectOfType<GlobalIngameTimeHandler>();
+        
         isInHouse = false;
         
         anim = GetComponent<Animator>();
@@ -67,11 +74,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Jump).Value) && isGrounded == true &&
-            hasStamina == true)
+        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Pause).Value))
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            stamina -= 20;
+            pauseMenu.SetActive(true);
+            globalIngameTimeHandler.gameIsPaused = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
         Sprinting(sprintSpeed);

@@ -644,7 +644,7 @@ AnimationClip:
   m_Events:
   - time: 0
     functionName: ShowSubtitles
-    data: "\u0413\u041B\u0410\u0412\u0415\u041D \u0413\u0415\u0420\u041E\u0419:\\n\u0418\u0437\u0432\u0438\u043D\u044F\u0432\u0430\u0439,
+    data: "\u0411\u041E\u042F\u041D:\\n\u0418\u0437\u0432\u0438\u043D\u044F\u0432\u0430\u0439,
       \u0442\u0443\u043A \u0437\u0430\u0435\u0442\u043E \u043B\u0438 \u0435? "
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

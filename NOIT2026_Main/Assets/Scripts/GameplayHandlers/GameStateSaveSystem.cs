@@ -109,4 +109,8 @@ public class GameStateSaveSystem : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerPosY", 0);
         PlayerPrefs.SetFloat("PlayerPosZ", 0);
     }
+    public void DeleteSave()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

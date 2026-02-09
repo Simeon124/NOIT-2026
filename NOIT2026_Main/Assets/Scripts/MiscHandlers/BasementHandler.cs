@@ -17,17 +17,12 @@ public class BasementHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerSanity.currentSanity < sanityValueTrigger)
+        if (playerSanity != null)
         {
-            basementGameObject.SetActive(true);
-            terrain.SetActive(false);
-        }
-        else
-        {
-            if (isInInterlude == false)
+            if(playerSanity.currentSanity < sanityValueTrigger)
             {
-                basementGameObject.SetActive(false);
-                terrain.SetActive(true);
+                basementGameObject.SetActive(true);
+                terrain.SetActive(false);
             }
         }
     }

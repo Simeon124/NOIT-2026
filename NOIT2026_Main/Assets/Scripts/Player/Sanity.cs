@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class Sanity : MonoBehaviour
 {
@@ -13,22 +14,45 @@ public class Sanity : MonoBehaviour
     [SerializeField] private float sanityRiseMultiplier;
     [SerializeField] private string insanityZoneTag;
     [SerializeField] private string safeZoneTag;
+    [SerializeField] private ParticleSystem doorParticles;
+    [SerializeField] AudioSource heartbeatAudio;
+    [SerializeField] AudioSource criticalSanityAudio;
+    private bool respawningStarted;
 
     [SerializeField] Volume insanityVolume;
 
     public bool isInInsanityZone = false;
+    private bool particlesPlaying = false;
 
     public List<string> currentZones = new List<string>();
 
     private void Update()
     {
+        if (respawningStarted == false && currentSanity <= 0)
+        {
+            StartCoroutine(Restart());
+            respawningStarted = true;
+        }
         if (currentZones.Contains(insanityZoneTag) && !currentZones.Contains("SafeZone"))
         {
             isInInsanityZone = true;
+            if (!particlesPlaying && currentSanity <= 45)
+            {
+                heartbeatAudio.Play();
+                doorParticles.gameObject.SetActive(true);
+                doorParticles.playbackSpeed = 0.1f;
+                doorParticles.Play();
+                particlesPlaying = true;
+            }
         }
         else
         {
+            heartbeatAudio.Stop();
+            doorParticles.gameObject.SetActive(false);
             isInInsanityZone = false;
+            doorParticles.playbackSpeed = 5f;
+            doorParticles.Stop();
+            particlesPlaying = false;
             StopAllCoroutines();
             StartCoroutine(SanityRegen());
         }
@@ -75,7 +99,7 @@ public class Sanity : MonoBehaviour
         {
             if (currentSanity > 0)
             {
-                insanityVolume.weight += Time.deltaTime * 0.01f * sanityDropMultiplier;
+                insanityVolume.weight += Time.deltaTime * 0.008f * sanityDropMultiplier;
                 currentSanity -= Time.deltaTime * sanityDropMultiplier;
             }
             yield return null;
@@ -100,5 +124,13 @@ public class Sanity : MonoBehaviour
             currentSanity = 100;
         }
 
+    }
+
+    public IEnumerator Restart()
+    {
+        heartbeatAudio.Stop();
+        criticalSanityAudio.Play();
+        yield return new WaitForSeconds(criticalSanityAudio.clip.length);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

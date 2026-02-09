@@ -13,6 +13,7 @@ public class InterludeNoteHandler : MonoBehaviour
     [SerializeField] private string text;
 
     [SerializeField] private GameObject basementGO;
+    [SerializeField] private GameObject terrainGO;
     
     bool notesJoined = false;
     
@@ -34,6 +35,7 @@ public class InterludeNoteHandler : MonoBehaviour
             noteUIElement.SetActive(true);
             notesJoined = true;
             basementGO.SetActive(true);
+            terrainGO.SetActive(false);
         }
     }
 }

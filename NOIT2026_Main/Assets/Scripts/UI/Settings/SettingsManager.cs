@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -7,10 +8,26 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] AudioMixer audioMixer;
     [SerializeField] GameObject controlsSettingsPanel;
     [SerializeField] GameObject generalSettingsPanel;
+    [SerializeField] private TMP_Dropdown graphicsSettingsDropdown;
     
     [SerializeField] GameObject generalSettingsToggleIcon;
     [SerializeField] GameObject controlsSettingsToggleIcon;
-    
+
+    public void ChangeGraphicalSettings()
+    {
+        switch (graphicsSettingsDropdown.value)
+        {
+            case 0:
+                QualitySettings.SetQualityLevel(0);
+                break;
+            case 1:
+                QualitySettings.SetQualityLevel(1);
+                break;
+            case 2:
+                QualitySettings.SetQualityLevel(2);
+                break;
+        }
+    }
 
     public void ChangeVolume(Slider slider)
     {

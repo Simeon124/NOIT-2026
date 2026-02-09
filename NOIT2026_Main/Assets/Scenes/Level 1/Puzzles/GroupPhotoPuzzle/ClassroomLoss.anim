@@ -679,14 +679,14 @@ AnimationClip:
   m_Events:
   - time: 3.5166667
     functionName: ShowSubtitles
-    data: "\u0421\u044A\u0443\u0447\u0435\u043D\u0438\u043A \u041A\u043E\u043C\u043F\u044E\u0442\u044A\u0440:\\n........"
+    data: "\u0421\u042A\u0423\u0427\u0415\u041D\u0418\u041A:\\n........"
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 6.516667
     functionName: ShowSubtitles
-    data: "\u0421\u044A\u0443\u0447\u0435\u043D\u0438\u043A \u041A\u043E\u043C\u043F\u044E\u0442\u044A\u0440:\\n\u041A\u0430\u043A\u0432\u043E........"
+    data: "\u0421\u042A\u0423\u0427\u0415\u041D\u0418\u041A:\\n\u041A\u0430\u043A\u0432\u043E........"
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

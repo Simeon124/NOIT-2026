@@ -13,6 +13,7 @@ public class InterludeNote : MonoBehaviour
     KeyboardDatabaseDTO keyProfile;
 
     [SerializeField] private GameObject noteUIElement;
+    [TextArea]
     [SerializeField] private string text;
     [SerializeField] AudioSource pageAudioSource;
     TextMeshProUGUI noteUIText;
