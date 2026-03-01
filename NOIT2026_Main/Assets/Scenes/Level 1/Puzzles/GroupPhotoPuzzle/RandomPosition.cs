@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class RandomPosition : MonoBehaviour
 {
+    [SerializeField] private int timeForAnswering = 20;
     [SerializeField] private int cutsceneIndex;
     public int WinCounter;
     [SerializeField] private Canvas canvas;
@@ -30,13 +31,14 @@ public class RandomPosition : MonoBehaviour
     public Vector3 positionBotRight;
     float CurrentTime = 0;
     bool StartColorChange = false;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         color = button.image.color;
         mainColor = button.image.color;
         button.gameObject.SetActive(false);
-        StartCoroutine(IntroFix(cutsceneLengths[level-1]));
+        //StartCoroutine(IntroFix(cutsceneLengths[level-1]));
         Cursor.lockState = CursorLockMode.None;
         for (int i = replyCounter - 4; i < replyCounter; i++)
         {
@@ -87,6 +89,12 @@ public class RandomPosition : MonoBehaviour
                 button.image.color = Color.Lerp(Color.green, Color.red, t);
         }
     }
+
+    bool CanStartButton()
+    {
+        return !ClassroomPuzzleButtonFixHandler.inConversation;
+    }
+    
     public void NumCall()
     {
         //kogato butona e natisnat bez da e v loopa
@@ -110,7 +118,7 @@ public class RandomPosition : MonoBehaviour
         reps = repeats;
         if (repeats == 0) {
             loop.score =(100*score) / repssave; 
-            loop.starter(1);  InLoop = false; 
+            loop.starter(0);  InLoop = false; 
             score = 0; StopAllCoroutines();
             ShowOptions();
             repssave++; 
@@ -121,17 +129,19 @@ public class RandomPosition : MonoBehaviour
         StartColorChange = false;
         if (repeats != 0) { StartCoroutine(PositionChange(n, repeats));  }
     }
-    IEnumerator CooldownButton(float time)   //MNOGO VAJNO TOVA TRQA DA MU SE DOBAVI CUTSCENE TRIGGER
+    public IEnumerator CooldownButton(float time)   //MNOGO VAJNO TOVA TRQA DA MU SE DOBAVI CUTSCENE TRIGGER
     {
+        Debug.Log("COoldownButton()");
         //puska loopa s butona sled opredeleno vreme
         CurrentTime = 0;
         StartColorChange = false;
         button.image.color = mainColor;
         color = mainColor;
-        yield return new WaitForSeconds(time);
+        
+        //yield return new WaitForSeconds(time);
         level++;
         animator.SetInteger("Level",level);
-        StartCoroutine(IntroFix(cutsceneLengths[level-1]));
+        //StartCoroutine(IntroFix(cutsceneLengths[level-1]));
         Puzzle.SetActive(false);
         //smenq texta v butonite. vseki chetvurti element ot masiva v pick1 e verniq otgovor
         int j = 0;
@@ -144,16 +154,24 @@ public class RandomPosition : MonoBehaviour
         replyCounter += 4;
         }
         
-        ButtonPosChange();
+        //ButtonPosChange();
        // loop.starter(0);
+
+       yield return null;
     }
 
-    void ButtonPosChange()
+    public void ButtonPosChange()
     {
-        float randomX = Random.Range(positionTopLeft.x, positionBotRight.x);
-        float randomY = Random.Range(positionTopLeft.y, positionBotRight.y);
+        /*/if (!CanStartButton())
+        {
+            return;
+        }/*/
+        
+        float randomX = Random.Range(200, 1000);
+        float randomY = Random.Range(100, 500);
         button.transform.position = new Vector3(randomX, randomY, canvas.transform.localScale.z);
         button.gameObject.SetActive(true);
+        Debug.Log("ButtonPosChange()");
     }
     public void AfterStarter(float WaitTime)
     {
@@ -174,7 +192,7 @@ public class RandomPosition : MonoBehaviour
         button.gameObject.SetActive(false);
         yield return new WaitForSeconds(1f);
         Options.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(timeForAnswering);
         pick1.loselife();
         Options.SetActive(false);
         if (cutscene)
@@ -190,12 +208,13 @@ public class RandomPosition : MonoBehaviour
         }
         
     }
-    IEnumerator IntroFix(int CutsceneLength)
+    public IEnumerator IntroFix(int CutsceneLength)
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0);
         Puzzle.SetActive(true);
         button.gameObject.SetActive(false);
         yield return new WaitForSeconds(CutsceneLength-2);
         loop.starter(1);
+        ButtonPosChange();
     }
 }

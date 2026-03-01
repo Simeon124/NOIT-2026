@@ -39,6 +39,10 @@ public class SressTimeHandler : MonoBehaviour
         while (minutes > 0 || seconds > 0)
         {
             yield return new WaitForSeconds(1);
+            if (minutes < 0)
+            {
+                break;
+            }
             if (seconds > 0)
             {
                 seconds--;
@@ -62,6 +66,19 @@ public class SressTimeHandler : MonoBehaviour
         else
         {
             seconds += inputSeconds;
+        }
+    }
+    
+    public void RemoveSeconds(int inputSeconds)
+    {
+        if (seconds - inputSeconds <= 0)
+        {
+            seconds = 60 - (inputSeconds - seconds);
+            minutes--;
+        }
+        else
+        {
+            seconds -= inputSeconds;
         }
     }
 }

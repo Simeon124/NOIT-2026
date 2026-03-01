@@ -110,4 +110,9 @@ public class Interactable : MonoBehaviour
 
 
     }
+    
+    public void DestroyScript()
+    {
+        Destroy(this);
+    }
 }

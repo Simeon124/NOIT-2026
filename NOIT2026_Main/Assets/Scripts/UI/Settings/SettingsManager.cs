@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -12,6 +13,15 @@ public class SettingsManager : MonoBehaviour
     
     [SerializeField] GameObject generalSettingsToggleIcon;
     [SerializeField] GameObject controlsSettingsToggleIcon;
+
+    private void Start()
+    {
+        var audioSlider = GetComponentInChildren<Slider>();
+        audioMixer.GetFloat("Volume", out var value);
+        audioSlider.value = value;
+
+        graphicsSettingsDropdown.value = QualitySettings.GetQualityLevel();
+    }
 
     public void ChangeGraphicalSettings()
     {

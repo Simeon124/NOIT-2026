@@ -22,19 +22,17 @@ public class Movement : MonoBehaviour
     bool sprinting;
     bool isPlaying = false; //Check for SFX
     [SerializeField] private bool isInPuzzle;
-    [SerializeField] private float walkingAudoDilay;
-    [SerializeField] private float runningAudoDilay;
+    [SerializeField] private float walkingAudioDelay;
+    [SerializeField] private float runningAudioDelay;
     [SerializeField] AudioSource walkingSFXSource;
     [SerializeField] AudioSource runningSFXSource;
-    [SerializeField] private AudioClip[] walkingSFXCollection;
-    [SerializeField] private AudioClip[] runningSFXCollection;
+    [SerializeField] private AudioClip[] outdoorWalkingSFXCollection;
+    [SerializeField] private AudioClip[] outdoorRunningSFXCollection;
 
     [SerializeField] private AudioClip[] indoorWalkingSFXCollection;
     [SerializeField] private AudioClip[] indoorRunningSFXCollection;
 
     [SerializeField] private float jumpForce;
-
-    GlobalIngameTimeHandler globalIngameTimeHandler;
     
     //[SerializeField] private Transform hips;
     Rigidbody rb;
@@ -49,14 +47,9 @@ public class Movement : MonoBehaviour
 
     Animator anim;
 
-    [SerializeField] private GameObject pauseMenu;
-
     // Start is called before the first frame update
     void Start()
     {
-        
-        globalIngameTimeHandler = FindObjectOfType<GlobalIngameTimeHandler>();
-        
         isInHouse = false;
         
         anim = GetComponent<Animator>();
@@ -74,15 +67,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Pause).Value))
-        {
-            pauseMenu.SetActive(true);
-            globalIngameTimeHandler.gameIsPaused = true;
-            Cursor.lockState = CursorLockMode.None;
-        }
-
         Sprinting(sprintSpeed);
-
 
         //Stamina
         if (stamina < maxStamina && stamina > 0 && sprinting == false && isGrounded == true)
@@ -148,14 +133,14 @@ public class Movement : MonoBehaviour
             {
                 if (!isNotMoving && !sprinting)
                 {
-                    walkingSFXSource.clip = walkingSFXCollection[Random.Range(0, walkingSFXCollection.Length)];
-                    StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudoDilay));
+                    walkingSFXSource.clip = outdoorWalkingSFXCollection[Random.Range(0, outdoorWalkingSFXCollection.Length)];
+                    StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudioDelay));
                 }
 
                 if (sprinting == true)
                 {
-                    runningSFXSource.clip = runningSFXCollection[Random.Range(0, runningSFXCollection.Length)];
-                    StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudoDilay));
+                    runningSFXSource.clip = outdoorRunningSFXCollection[Random.Range(0, outdoorRunningSFXCollection.Length)];
+                    StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudioDelay));
                 }
             }
             
@@ -167,48 +152,68 @@ public class Movement : MonoBehaviour
                     {
                         walkingSFXSource.clip =
                             indoorWalkingSFXCollection[Random.Range(0, indoorWalkingSFXCollection.Length)];
-                        StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudoDilay));
+                        StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudioDelay));
                     }
 
                     if (sprinting == true)
                     {
                         runningSFXSource.clip =
                             indoorRunningSFXCollection[Random.Range(0, indoorRunningSFXCollection.Length)];
-                        StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudoDilay));
+                        StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudioDelay));
                     }
                 }
                 else
                 {
                     if (!isNotMoving && !sprinting)
                     {
-                        walkingSFXSource.clip = walkingSFXCollection[Random.Range(0, walkingSFXCollection.Length)];
-                        StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudoDilay));
+                        walkingSFXSource.clip = outdoorWalkingSFXCollection[Random.Range(0, outdoorWalkingSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudioDelay));
                     }
 
                     if (sprinting == true)
                     {
-                        runningSFXSource.clip = runningSFXCollection[Random.Range(0, runningSFXCollection.Length)];
-                        StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudoDilay));
+                        runningSFXSource.clip = outdoorRunningSFXCollection[Random.Range(0, outdoorRunningSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudioDelay));
+                    }
+                }
+            }
+            else
+            {
+                if (isInHouse)
+                {
+                    if (!isNotMoving && !sprinting)
+                    {
+                        walkingSFXSource.clip =
+                            indoorWalkingSFXCollection[Random.Range(0, indoorWalkingSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudioDelay));
+                    }
+
+                    if (sprinting == true)
+                    {
+                        runningSFXSource.clip =
+                            indoorRunningSFXCollection[Random.Range(0, indoorRunningSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudioDelay));
+                    }
+                }
+                else
+                {
+                    if (!isNotMoving && !sprinting)
+                    {
+                        walkingSFXSource.clip =
+                            outdoorWalkingSFXCollection[Random.Range(0, outdoorWalkingSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudioDelay));
+                    }
+
+                    if (sprinting == true)
+                    {
+                        runningSFXSource.clip =
+                            outdoorRunningSFXCollection[Random.Range(0, outdoorRunningSFXCollection.Length)];
+                        StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudioDelay));
                     }
                 }
             }
 
-            if (isInHouse)
-            {
-                if (!isNotMoving && !sprinting)
-                {
-                    walkingSFXSource.clip =
-                        indoorWalkingSFXCollection[Random.Range(0, indoorWalkingSFXCollection.Length)];
-                    StartCoroutine(PlayAudioWithDelay(walkingSFXSource, walkingAudoDilay));
-                }
-
-                if (sprinting == true)
-                {
-                    runningSFXSource.clip =
-                        indoorRunningSFXCollection[Random.Range(0, indoorRunningSFXCollection.Length)];
-                    StartCoroutine(PlayAudioWithDelay(runningSFXSource, runningAudoDilay));
-                }
-            }
+            
         }
     }
 

@@ -12,9 +12,12 @@ public class PauseMenuHandler : MonoBehaviour
     [SerializeField] int InterludeIndex;
     [SerializeField] int Level1Index;
     [SerializeField] int Level2Index;
+    
+    Movement playerMovement;
 
     private void Start()
     {
+        playerMovement = FindObjectOfType<Movement>();
         globalIngameTimeHandler = FindObjectOfType<GlobalIngameTimeHandler>();
     }
 
@@ -22,7 +25,19 @@ public class PauseMenuHandler : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         globalIngameTimeHandler.gameIsPaused = false;
-        Cursor.lockState = CursorLockMode.Locked;
+
+        if (playerMovement != null)
+        {
+            if (playerMovement.isActiveAndEnabled)
+            {
+                Cursor.lockState = CursorLockMode.Locked;      
+            }
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        
     }   
 
     public void ToggleSettings()

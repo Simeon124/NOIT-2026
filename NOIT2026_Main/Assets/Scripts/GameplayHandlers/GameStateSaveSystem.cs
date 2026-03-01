@@ -113,4 +113,10 @@ public class GameStateSaveSystem : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
     }
+    
+    //Or you can separately save
+    public void SetLevelSave()
+    {
+        PlayerPrefs.SetInt("CurrentLevel", currentLevel);
+    }
 }

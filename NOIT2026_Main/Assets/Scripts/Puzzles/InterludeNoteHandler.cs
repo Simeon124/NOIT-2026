@@ -5,7 +5,9 @@ using UnityEngine;
 public class InterludeNoteHandler : MonoBehaviour
 {
     GlobalIngameTimeHandler globalIngameTimeHandler;
-
+    
+    [SerializeField] private GameObject[] notePanels;
+    
     [SerializeField] private GameObject notePanel;
     [SerializeField] private List<GameObject> notes; 
 
@@ -17,8 +19,6 @@ public class InterludeNoteHandler : MonoBehaviour
     
     bool notesJoined = false;
     
-    TextMeshProUGUI noteUIText;
-    
     void Start()
     {
         globalIngameTimeHandler = GameObject.FindAnyObjectByType<GlobalIngameTimeHandler>();
@@ -28,10 +28,20 @@ public class InterludeNoteHandler : MonoBehaviour
     {
         if (notes.TrueForAll(x => !x.activeSelf) && notesJoined == false)
         {
-            notePanel.SetActive(false);
+            if (notePanel != null)
+            {
+                notePanel.SetActive(false); 
+            }
+            else
+            {
+                foreach (var notePanel in notePanels)
+                {
+                    notePanel.SetActive(false);
+                }
+            }
+            
             globalIngameTimeHandler.gameIsPaused = true;
             
-            noteUIElement.GetComponentInChildren<TextMeshProUGUI>().text = text;
             noteUIElement.SetActive(true);
             notesJoined = true;
             basementGO.SetActive(true);

@@ -2790,6 +2790,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 26.166666
+    functionName: SetLevelSave
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 29.066668
     functionName: ChangeToSceneIndex
     data: 

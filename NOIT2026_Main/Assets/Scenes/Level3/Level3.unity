@@ -10728,6 +10728,10 @@ PrefabInstance:
       propertyPath: sanityRiseMultiplier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 627907528213456993, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+      propertyPath: m_Antialiasing
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1354297274281261337, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -10901,7 +10905,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Flashlight
   flashlight: {fileID: 1143483350}
-  flashlightKey: 102
+  isOn: 0
+  flashlightImage: {fileID: 0}
+  turnOnSFX: {fileID: 0}
+  turnOffSFX: {fileID: 0}
 --- !u!1001 &653004991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59612,6 +59619,7 @@ MonoBehaviour:
   basementGameObject: {fileID: 1484645149}
   terrain: {fileID: 375723500}
   sanityValueTrigger: 20
+  isInInterlude: 0
 --- !u!4 &1230377282
 Transform:
   m_ObjectHideFlags: 0
@@ -72702,6 +72710,7 @@ MonoBehaviour:
   fragments: []
   isCutscene: 0
   player: {fileID: 0}
+  positionLoaded: 0
 --- !u!4 &1817131748
 Transform:
   m_ObjectHideFlags: 0

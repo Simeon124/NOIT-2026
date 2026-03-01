@@ -1974,6 +1974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff3a4039ca3a12c091678b7a6bdee30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationSceneChangeManager
+  sceneIndex: 0
 --- !u!4 &114154021
 Transform:
   m_ObjectHideFlags: 0
@@ -4943,7 +4944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SressTimeHandler
   minutes: 0
-  seconds: 45
+  seconds: 60
   UIMode: 1
   minutesText: {fileID: 1738547173}
   secondsText: {fileID: 800553072}
@@ -6599,6 +6600,10 @@ PrefabInstance:
     - target: {fileID: 4228638966643171970, guid: 7ade998a75360c54ca6e55373981e604, type: 3}
       propertyPath: m_Name
       value: WelcomeMat_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6070489090118878978, guid: 7ade998a75360c54ca6e55373981e604, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9062602307051458104, guid: 7ade998a75360c54ca6e55373981e604, type: 3}
       propertyPath: m_LocalScale.x
@@ -17224,7 +17229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9183824216971400581, guid: 9dd715038d6fa2e43a9da28d327d977b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -48.253967
+      value: -47.69
       objectReference: {fileID: 0}
     - target: {fileID: 9183824216971400581, guid: 9dd715038d6fa2e43a9da28d327d977b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17275,6 +17280,10 @@ PrefabInstance:
     - target: {fileID: 4228638966643171970, guid: 7ade998a75360c54ca6e55373981e604, type: 3}
       propertyPath: m_Name
       value: WelcomeMat_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6070489090118878978, guid: 7ade998a75360c54ca6e55373981e604, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9062602307051458104, guid: 7ade998a75360c54ca6e55373981e604, type: 3}
       propertyPath: m_LocalScale.x
@@ -22078,7 +22087,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 3
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -23608,6 +23617,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400474684}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1425016380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1425016382}
+  - component: {fileID: 1425016381}
+  m_Layer: 0
+  m_Name: PauseMenuHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1425016381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425016380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4e211902d41192995049cfdd7a6db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseHandler
+  pauseMenu: {fileID: 1742355123}
+--- !u!4 &1425016382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425016380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1035.9788, y: 3.02197, z: 994.15204}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1433164479
 GameObject:
   m_ObjectHideFlags: 0
@@ -26151,6 +26205,10 @@ PrefabInstance:
       propertyPath: sanityRiseMultiplier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 627907528213456993, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+      propertyPath: m_Antialiasing
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1354297274281261337, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -26166,6 +26224,10 @@ PrefabInstance:
     - target: {fileID: 2301569160703835051, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -33.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740461294805780037, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+      propertyPath: sensitivity
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2740461294805780037, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: maxYRotation
@@ -26199,6 +26261,10 @@ PrefabInstance:
       propertyPath: speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5475517554042468393, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1742355123}
     - target: {fileID: 5475517554042468393, guid: 373813b7bda9f6e4a91c336f37ce6853, type: 3}
       propertyPath: sprintSpeed
       value: 5
@@ -31349,3 +31415,4 @@ SceneRoots:
   - {fileID: 1526092616}
   - {fileID: 2128944032}
   - {fileID: 390373018}
+  - {fileID: 1425016382}

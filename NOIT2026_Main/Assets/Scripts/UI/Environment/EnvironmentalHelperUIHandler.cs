@@ -12,6 +12,7 @@ public class EnvironmentalHelperUIHandler : MonoBehaviour
     [SerializeField] private bool inRange;
     [SerializeField] private int yOffset;
     [SerializeField] private int xOffset;
+    [SerializeField] private int zOffset;
 
     private void Update()
     {
@@ -25,7 +26,7 @@ public class EnvironmentalHelperUIHandler : MonoBehaviour
 
         if (canInteract)
         {
-            targetUIElement.transform.position = Camera.main.WorldToScreenPoint(new Vector3(hit.transform.position.x, hit.transform.position.y + yOffset, hit.transform.position.z + xOffset));
+            targetUIElement.transform.position = Camera.main.WorldToScreenPoint(new Vector3(hit.transform.position.x + xOffset, hit.transform.position.y + yOffset, hit.transform.position.z + zOffset));
         }
     }
 

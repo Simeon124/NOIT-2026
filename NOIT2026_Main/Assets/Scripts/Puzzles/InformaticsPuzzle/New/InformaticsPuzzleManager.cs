@@ -174,6 +174,7 @@ public class InformaticsPuzzleManager : MonoBehaviour
             StartCoroutine(WaitForAnimationEnd());
             ChangeToNextQuestion();
             stressBarManager.WrongAns();
+            sressTimeHandler.RemoveSeconds(3);
             //StartCoroutine(Timer(effectDuration));
             //StartCoroutine(Earthquake(Camera.main.transform, effectDuration, effectCameraMultiplier));
         }

@@ -75,6 +75,7 @@
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ScreenOverlay.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ScreenSpaceAmbientObscurance.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/SunShafts.cs" />
+    <Compile Include="Assets/Scripts/Puzzles/GroupPhotoPuzzle/ClassroomPuzzleButtonFixHandler.cs" />
     <Compile Include="Assets/Scripts/AI/Enemy/EnemyNavigation.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/GlobalFog.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsHelper.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Assets/Scenes/Level 1/Puzzles/GroupPhotoPuzzle/ReloadScene.cs" />
     <Compile Include="Assets/Scripts/GameplayHandlers/LevelFinalizationHandling.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/TiltShift.cs" />
+    <Compile Include="Assets/Scripts/UI/CharactersLookAt.cs" />
     <Compile Include="Assets/Scripts/MiscHandlers/PianoHandler.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Quads.cs" />
     <Compile Include="Assets/Scripts/UI/Settings/SettingsManager.cs" />
@@ -140,6 +142,7 @@
     <Compile Include="Assets/Scripts/MiscHandlers/BasementHandler.cs" />
     <Compile Include="Assets/Scripts/Tutorial/ControlsTutorialHandlerSystem.cs" />
     <Compile Include="Assets/Scripts/UI/MainMenu/UIHover.cs" />
+    <Compile Include="Assets/Scripts/GameplayHandlers/PauseHandler.cs" />
     <Compile Include="Assets/Scripts/UI/Settings/KeybindManager.cs" />
     <Compile Include="Assets/Scripts/GameplayHandlers/SressTimeHandler.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Antialiasing.cs" />
@@ -1046,6 +1049,9 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
@@ -1079,6 +1085,12 @@
     <Reference Include="Unity.Burst.Editor">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Bindings.OpenImageIO.Editor">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Bindings.OpenImageIO.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
@@ -1099,6 +1111,9 @@
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TerrainTools">
       <HintPath>/home/simo/Projects/Programming/ForCompetitions/NOIT2026/NOIT-2026_Local/NOIT2026_Main/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>

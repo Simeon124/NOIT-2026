@@ -11,19 +11,22 @@ public class HasLineOfSight : MonoBehaviour
     {
         for (int i = 0; i < inter.Length; i++)
         {
-            if (inter[i].LOSChecker)
+            if (inter[i] != null)
             {
-                InLineOfSight = inter[i].HasLineOfSight(this.transform.position, inter[i].transform.position);
-
-                if (InLineOfSight)
+                if (inter[i].LOSChecker)
                 {
-                    interactedObject = inter[i].gameObject;
-                    break;
+                    InLineOfSight = inter[i].HasLineOfSight(this.transform.position, inter[i].transform.position);
+
+                    if (InLineOfSight)
+                    {
+                        interactedObject = inter[i].gameObject;
+                        break;
+                    }
                 }
-            }
-            else
-            {
-                InLineOfSight = false;
+                else
+                {
+                    InLineOfSight = false;
+                }
             }
         }
     }

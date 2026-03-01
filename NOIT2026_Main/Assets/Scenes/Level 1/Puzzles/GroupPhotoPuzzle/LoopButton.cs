@@ -10,8 +10,8 @@ public class LoopButton : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        button.gameObject.SetActive(false);
-        buttonstate = false;
+        //button.gameObject.SetActive(false);
+        buttonstate = true;
       // StartCoroutine(Countdown(2));
     }
 

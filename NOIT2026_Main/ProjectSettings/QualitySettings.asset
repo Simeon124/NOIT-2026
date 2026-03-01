@@ -53,9 +53,9 @@ QualitySettings:
     terrainPixelError: 1
     terrainDetailDensityScale: 1
     terrainBasemapDistance: 1000
-    terrainDetailDistance: 80
+    terrainDetailDistance: 100
     terrainTreeDistance: 5000
-    terrainBillboardStart: 50
+    terrainBillboardStart: 101
     terrainFadeLength: 5
     terrainMaxTrees: 50
     excludedTargetPlatforms: []

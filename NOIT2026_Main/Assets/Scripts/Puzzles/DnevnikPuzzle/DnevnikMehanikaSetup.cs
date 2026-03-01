@@ -104,6 +104,11 @@ public class DnevnikMehanikaSetup : MonoBehaviour
     {
         text.SetActive(true);
         a = Random.Range(0, 5);
+        while (keys[a].Equals(keyProfile.Actions.First(x => x.Key == Action.Interact).Value))
+        {
+            a = Random.Range(0, 5);
+            yield return null;
+        }
         keyToPress.text = keys[a].ToString();
         yield return new WaitForSeconds(2);
         StartCoroutine(ButtonSeq());

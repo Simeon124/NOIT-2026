@@ -1893,37 +1893,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInHouse: 0
   sanityScr: {fileID: 0}
-  spaceKey: 32
-  sprintKey: 304
-  interactKey: 101
   speed: 10
   sprintSpeed: 17
-  walkingAudoDilay: 1
-  runningAudoDilay: 0.5
+  isInPuzzle: 0
+  walkingAudioDelay: 1
+  runningAudioDelay: 0.5
   walkingSFXSource: {fileID: 7025377015104222382}
   runningSFXSource: {fileID: 257998283190141000}
-  walkingSFXCollection:
+  outdoorWalkingSFXCollection:
   - {fileID: 8300000, guid: bd7d6d8f9efe64749a3be0dd47d8519c, type: 3}
   - {fileID: 8300000, guid: 4d33ee953c941e2449b0f325e128f799, type: 3}
   - {fileID: 8300000, guid: de812b515a5c45d4fa030cf39e846e84, type: 3}
   - {fileID: 8300000, guid: 4d6f9ef662a06c148bdbf92d8972618f, type: 3}
   - {fileID: 8300000, guid: 38025832fbb2254429dd042621e613bc, type: 3}
-  - {fileID: 8300000, guid: c30be629cb0f2f047926257d3c348fa2, type: 3}
-  - {fileID: 8300000, guid: 117ee758af99f55458d5e299dd568462, type: 3}
-  - {fileID: 8300000, guid: fe550c1d301697d4cb10a20ab0aa4ee5, type: 3}
-  - {fileID: 8300000, guid: de7e760217c5e7c42bf69b9bf512b78e, type: 3}
-  - {fileID: 8300000, guid: aa5daff71fd47a5449265db33ed14374, type: 3}
-  runningSFXCollection:
+  outdoorRunningSFXCollection:
   - {fileID: 8300000, guid: bd7d6d8f9efe64749a3be0dd47d8519c, type: 3}
   - {fileID: 8300000, guid: 4d33ee953c941e2449b0f325e128f799, type: 3}
   - {fileID: 8300000, guid: de812b515a5c45d4fa030cf39e846e84, type: 3}
   - {fileID: 8300000, guid: 4d6f9ef662a06c148bdbf92d8972618f, type: 3}
   - {fileID: 8300000, guid: 38025832fbb2254429dd042621e613bc, type: 3}
-  - {fileID: 8300000, guid: c30be629cb0f2f047926257d3c348fa2, type: 3}
-  - {fileID: 8300000, guid: 117ee758af99f55458d5e299dd568462, type: 3}
-  - {fileID: 8300000, guid: fe550c1d301697d4cb10a20ab0aa4ee5, type: 3}
-  - {fileID: 8300000, guid: de7e760217c5e7c42bf69b9bf512b78e, type: 3}
-  - {fileID: 8300000, guid: aa5daff71fd47a5449265db33ed14374, type: 3}
   indoorWalkingSFXCollection:
   - {fileID: 8300000, guid: d5c3778edd6f88244a5eff78db0951cb, type: 3}
   - {fileID: 8300000, guid: ecef98b3978a2e74a9d321197c9fc98e, type: 3}
@@ -1941,6 +1929,7 @@ MonoBehaviour:
   isGrounded: 0
   stamina: 100
   staminaResetMultiplier: 5
+  pauseMenu: {fileID: 0}
 --- !u!54 &6494015765529231843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1986,6 +1975,9 @@ MonoBehaviour:
   sanityRiseMultiplier: 1
   insanityZoneTag: InsanityZone
   safeZoneTag: SafeZone
+  doorParticles: {fileID: 0}
+  heartbeatAudio: {fileID: 0}
+  criticalSanityAudio: {fileID: 0}
   insanityVolume: {fileID: 0}
   isInInsanityZone: 0
   currentZones: []
