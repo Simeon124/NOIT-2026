@@ -19,7 +19,7 @@ public class Sanity : MonoBehaviour
     [SerializeField] AudioSource criticalSanityAudio;
     private bool respawningStarted;
 
-    [SerializeField] Volume insanityVolume;
+    public Volume insanityVolume;
 
     public bool isInInsanityZone = false;
     private bool particlesPlaying = false;
@@ -39,19 +39,25 @@ public class Sanity : MonoBehaviour
             if (!particlesPlaying && currentSanity <= 45)
             {
                 heartbeatAudio.Play();
-                doorParticles.gameObject.SetActive(true);
-                doorParticles.playbackSpeed = 0.1f;
-                doorParticles.Play();
+                if (doorParticles != null)
+                {
+                    doorParticles.gameObject.SetActive(true);
+                    doorParticles.playbackSpeed = 0.1f;
+                    doorParticles.Play();
+                }
                 particlesPlaying = true;
             }
         }
         else
         {
             heartbeatAudio.Stop();
-            doorParticles.gameObject.SetActive(false);
+            if (doorParticles != null)
+            {
+                doorParticles.gameObject.SetActive(false);
+                doorParticles.playbackSpeed = 5f;
+                doorParticles.Stop();
+            }
             isInInsanityZone = false;
-            doorParticles.playbackSpeed = 5f;
-            doorParticles.Stop();
             particlesPlaying = false;
             StopAllCoroutines();
             StartCoroutine(SanityRegen());

@@ -21,7 +21,6 @@ public class LookControl : MonoBehaviour
 
     void LateUpdate()
     {
-
         var mousAxisX = Input.GetAxis("Mouse X") * Time.deltaTime * sensitivity * 10;
         var mousAxisY = Input.GetAxis("Mouse Y") * Time.deltaTime * sensitivity * 10;
 
@@ -29,10 +28,9 @@ public class LookControl : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, minYRotation, maxYRotation);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
-        gameObject.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
         bodyRotation += mousAxisX;
-        playerBody.localEulerAngles = new Vector3(playerBody.rotation.x, bodyRotation, playerBody.rotation.z);
+        playerBody.localEulerAngles = new Vector3(0, bodyRotation, 0);
 
     }
 }
