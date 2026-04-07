@@ -9,7 +9,7 @@ public class LookControl : MonoBehaviour
     //[SerializeField] private Transform spine;
     [SerializeField] private float minYRotation;
     [SerializeField] private float maxYRotation;
-    [SerializeField] private int sensitivity;
+    [SerializeField] private float sensitivity;
     float bodyRotation = 0;
     float xRotation = 0;
 
@@ -21,6 +21,13 @@ public class LookControl : MonoBehaviour
 
     void LateUpdate()
     {
+        var mouseSenProperty = PlayerPrefs.GetFloat(GlobalConfig.mouseSensitivitySavePropertyName);
+
+        if (mouseSenProperty != 0)
+        {
+            sensitivity = mouseSenProperty;
+        }
+        
         var mousAxisX = Input.GetAxis("Mouse X") * Time.deltaTime * sensitivity * 10;
         var mousAxisY = Input.GetAxis("Mouse Y") * Time.deltaTime * sensitivity * 10;
 

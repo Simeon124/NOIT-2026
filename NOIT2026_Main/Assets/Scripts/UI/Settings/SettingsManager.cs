@@ -16,10 +16,21 @@ public class SettingsManager : MonoBehaviour
 
     private void Start()
     {
-        var audioSlider = GetComponentInChildren<Slider>();
+        var audioSlider = GameObject.Find("_AudioSlider").GetComponent<Slider>();
         audioMixer.GetFloat("Volume", out var value);
         audioSlider.value = value;
-
+        
+        var mouseSenSlider = GameObject.Find("SensitivitySlider").GetComponentInChildren<Slider>();
+        var mouseSenProperty = PlayerPrefs.GetFloat(GlobalConfig.mouseSensitivitySavePropertyName);
+        if (mouseSenProperty != 0)
+        {
+            mouseSenSlider.value = mouseSenProperty;
+        }
+        else
+        {
+            PlayerPrefs.SetFloat(GlobalConfig.mouseSensitivitySavePropertyName, mouseSenSlider.value);
+        }
+        
         graphicsSettingsDropdown.value = QualitySettings.GetQualityLevel();
     }
 
@@ -49,6 +60,11 @@ public class SettingsManager : MonoBehaviour
         {
             audioMixer.SetFloat("Volume", slider.value);
         }
+    }
+
+    public void ChangeMouseSensitivity(Slider slider)
+    {
+        PlayerPrefs.SetFloat(GlobalConfig.mouseSensitivitySavePropertyName, slider.value);
     }
     
     public void ToggleGeneralSettings()

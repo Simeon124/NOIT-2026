@@ -316,6 +316,9 @@ public class Movement : MonoBehaviour
         //Because the animation overrides the position, we make sure we put the saved position script in LateUpdate in
         // the GameStateSaveSystem script
         var gameStateSaveSystem = FindAnyObjectByType<GameStateSaveSystem>();
-        gameStateSaveSystem.positionLoaded = true;
+        if (gameStateSaveSystem != null)
+        {
+            gameStateSaveSystem.positionLoaded = true;
+        }
     }
 }

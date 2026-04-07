@@ -84,6 +84,7 @@
     <Compile Include="Assets/Scripts/GameplayHandlers/Key.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsHelper.cs" />
     <Compile Include="Assets/Scripts/Puzzles/DnevnikPuzzle/Interactable.cs" />
+    <Compile Include="Assets/Scripts/UI/Environment/EnvironmentalSubtitleManagmentSystem.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InformaticsPuzzle/New/InformaticsPuzzleManager.cs" />
     <Compile Include="Assets/Scripts/GameplayHandlers/SyringeHandler.cs" />
     <Compile Include="Assets/Scripts/Puzzles/InterludeNote.cs" />
@@ -171,6 +172,7 @@
     <Compile Include="Assets/Scenes/Level 1/Puzzles/GroupPhotoPuzzle/RandomPosition.cs" />
     <Compile Include="Assets/Scripts/Player/Flashlight.cs" />
     <Compile Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs" />
+    <Compile Include="Assets/Scripts/UI/Environment/EnvironmentalSubtitlesDTO.cs" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/Tonemapper.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
     <None Include="Assets/Models/Outdoor/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/GlobalFog.shader" />
