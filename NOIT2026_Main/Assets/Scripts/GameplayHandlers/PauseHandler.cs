@@ -22,7 +22,7 @@ public class PauseHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Pause).Value))
+        if (Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Pause).Value) && globalIngameTimeHandler.gameIsPaused == false)
         {
             pauseMenu.SetActive(true);
             globalIngameTimeHandler.gameIsPaused = true;

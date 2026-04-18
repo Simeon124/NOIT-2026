@@ -16,9 +16,12 @@ public class SettingsManager : MonoBehaviour
 
     private void Start()
     {
-        var audioSlider = GameObject.Find("_AudioSlider").GetComponent<Slider>();
+        var audioSlider = GameObject.Find("AudioSlider").GetComponent<Slider>();
         audioMixer.GetFloat("Volume", out var value);
-        audioSlider.value = value;
+        if (value != 0)
+        {
+            audioSlider.value = value;
+        }
         
         var mouseSenSlider = GameObject.Find("SensitivitySlider").GetComponentInChildren<Slider>();
         var mouseSenProperty = PlayerPrefs.GetFloat(GlobalConfig.mouseSensitivitySavePropertyName);

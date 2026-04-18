@@ -32,8 +32,13 @@ public class EnvironmentalSubtitleManagmentSystem : MonoBehaviour
         {
             playerMovement.enabled = false;
             subtitleParentGameObject.SetActive(true);
+
+            if (environmentalSubtitlesDto.subtitles.Count == 0)
+            {
+                environmentalSubtitlesDto.gameObject.SetActive(false);
+                Reset();
+            }
             
-            Debug.Log($"subtitles count: {environmentalSubtitlesDto.subtitles.Count}; currentIndex: {currentIndex}");
             if (environmentalSubtitlesDto.subtitles.Count > currentIndex)
             {
                 if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -43,7 +48,6 @@ public class EnvironmentalSubtitleManagmentSystem : MonoBehaviour
                     skipIndicator.SetActive(false);
                     currentIndex++;
                 }
-                Debug.Log("Clicked on " + environmentalSubtitlesDto.subtitles[currentIndex]);
             }
             else
             {

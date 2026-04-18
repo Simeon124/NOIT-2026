@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float sprintSpeed;
     private float normalSpeed;
     bool sprinting;
-    bool isPlaying = false; //Check for SFX
+    [SerializeField] bool isPlaying = false; //Check for SFX
     [SerializeField] private bool isInPuzzle;
     [SerializeField] private float walkingAudioDelay;
     [SerializeField] private float runningAudioDelay;
@@ -43,10 +43,14 @@ public class Movement : MonoBehaviour
     [SerializeField] float staminaResetMultiplier;
     float maxStamina;
     bool hasStamina;
-    bool isNotMoving;
+    [SerializeField] bool isNotMoving;
 
     Animator anim;
 
+    void OnEnable()
+    {
+        isPlaying = false;
+    }
     // Start is called before the first frame update
     void Start()
     {

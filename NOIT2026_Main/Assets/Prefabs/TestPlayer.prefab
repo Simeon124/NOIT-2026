@@ -329,7 +329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerBody: {fileID: 8343899316333930975}
   minYRotation: -90
-  maxYRotation: 50
+  maxYRotation: 60
   sensitivity: 20
 --- !u!1 &1980881142409518164
 GameObject:
@@ -547,6 +547,7 @@ MonoBehaviour:
   sanityScr: {fileID: 0}
   speed: 10
   sprintSpeed: 17
+  isPlaying: 0
   isInPuzzle: 0
   walkingAudioDelay: 1
   runningAudioDelay: 0.5
@@ -581,6 +582,7 @@ MonoBehaviour:
   isGrounded: 0
   stamina: 100
   staminaResetMultiplier: 5
+  isNotMoving: 0
 --- !u!54 &6494015765529231843
 Rigidbody:
   m_ObjectHideFlags: 0

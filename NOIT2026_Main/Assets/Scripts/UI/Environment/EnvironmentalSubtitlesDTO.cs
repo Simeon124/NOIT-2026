@@ -22,6 +22,7 @@ public class EnvironmentalSubtitlesDTO : MonoBehaviour
     {
         if (inRange && Input.GetKeyDown(keyProfile.Actions.First(x => x.Key == Action.Interact).Value))
         {
+            this.gameObject.layer = LayerMask.GetMask("Default");
             environmentalSubtitleManagement.environmentalSubtitlesDto = this;
         }
     }

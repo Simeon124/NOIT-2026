@@ -11,6 +11,8 @@ public class DoorUnlockSystem : MonoBehaviour
     KeyboardDatabaseDTO keyProfile;
     private bool inRange;
     [SerializeField] AudioSource unlockSound;
+    [SerializeField] AudioSource lockedSound;
+    [SerializeField] GameObject interactionIndicator;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,18 +29,32 @@ public class DoorUnlockSystem : MonoBehaviour
         if (!isUnlocked)
         {
             var interactKey = keyProfile.Actions.First(x => x.Key == Action.Interact).Value;
-            if (inRange && Input.GetKeyDown(interactKey) && playerInventory.items
-                    .Where(x => x.GetType() == typeof(Key))
-                    .Select(x => x as Key)
-                    .FirstOrDefault(x => x.door == this.gameObject))
+            if (playerInventory.items != null)
             {
-                Unlock();
+                if (inRange && Input.GetKeyDown(interactKey) && playerInventory.items
+                        .Where(x => x.GetType() == typeof(Key))
+                        .Select(x => x as Key)
+                        .FirstOrDefault(x => x.door == this.gameObject))
+                {
+                    Unlock();
+                }
+                else if(inRange && Input.GetKeyDown(interactKey))
+                {
+                    if (lockedSound != null)
+                    {
+                        lockedSound.Play();
+                    }
+                }
             }
         }
     }
 
     void Unlock()
     {
+        if (interactionIndicator != null)
+        {
+            interactionIndicator.SetActive(false);
+        }
         gameObject.layer = defaultLayer;
         isUnlocked = true;
         rb.isKinematic = false;

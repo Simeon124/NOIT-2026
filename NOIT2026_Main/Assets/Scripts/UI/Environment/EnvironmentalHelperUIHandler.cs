@@ -14,19 +14,40 @@ public class EnvironmentalHelperUIHandler : MonoBehaviour
     [SerializeField] private int xOffset;
     [SerializeField] private int zOffset;
 
+    [SerializeField] private GameObject physicalTargetUIElement;
     private void Update()
     {
         RaycastHit hit;
         
         bool canInteract = Physics.Raycast(rayStartPos.position, rayStartPos.forward, out hit, rayLength,
             environmentalTriggerLayer);
-        
-        
-        targetUIElement.SetActive(canInteract);
+
+        if (physicalTargetUIElement != null)
+        {
+            physicalTargetUIElement.SetActive(canInteract);
+        }
+        else
+        {
+            targetUIElement.SetActive(canInteract);
+        }
 
         if (canInteract)
         {
-            targetUIElement.transform.position = Camera.main.WorldToScreenPoint(new Vector3(hit.transform.position.x + xOffset, hit.transform.position.y + yOffset, hit.transform.position.z + zOffset));
+            
+            
+            float targetX = hit.transform.position.x + xOffset;
+            float targetY = hit.transform.position.y + yOffset;
+            float targetZ = hit.transform.position.z + zOffset;
+            
+            if (physicalTargetUIElement != null)
+            {
+                physicalTargetUIElement.transform.position = new Vector3(targetX, targetY, targetZ);
+                physicalTargetUIElement.transform.LookAt(Camera.main.transform, Vector3.up);
+            }
+            else
+            {
+                targetUIElement.transform.position = Camera.main.WorldToScreenPoint(new Vector3(targetX, targetY, targetZ));
+            }
         }
     }
 

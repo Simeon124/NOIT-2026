@@ -65,6 +65,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/Level3.unity
     guid: e5b1a30d2b50fb0ac8afc5bda0d87178
+  - enabled: 1
+    path: Assets/Scenes/Level3/Puzzles/RobberFragment.unity
+    guid: 996365b96791eadb5afa5dbc542e70a8
+  - enabled: 1
+    path: Assets/Scenes/Level3/Puzzles/AbandonedBuildingFragment.unity
+    guid: 1da2c43aed16a9df5a616a43e023fb7f
+  - enabled: 1
+    path: Assets/Scenes/SeparateCutscenes/AbandonedBuildingChasingScene.unity
+    guid: c170ba1cceafd9828b0adab874bbd099
+  - enabled: 1
+    path: Assets/Scenes/SeparateCutscenes/AbandonedBuildingOutroScene.unity
+    guid: 132f9c8e11d86bcc7ac378306cf81bd3
+  - enabled: 1
+    path: Assets/Scenes/Level3/Puzzles/VoidEscape.unity
+    guid: 0b035ebe8da349f05aebe4bdf2209822
   - enabled: 0
     path: Assets/Scenes/ToBeContinuedScenes/ToBeContinued1.0/ToBeContinued.unity
     guid: 69fb6479c8a40984a8cdb26a585c3f9b
